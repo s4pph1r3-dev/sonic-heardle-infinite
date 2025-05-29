@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import {onMounted} from "vue";
+import settings from "@/settings/settings.json"
 
 onMounted(()=>{
   document.getElementById("modal-title").innerHTML = "Support";
@@ -12,7 +13,7 @@ onMounted(()=>{
   <div class="infinite-container">
     <div>
       <a class="kofi-button py-2 px-3 rounded-lg items-center flex  svelte-1d3p4dy" href="https://mario-heardle-infinite.glitch.me/" title="Mario Heardle Infinite">
-        <span class="kofitext svelte-1d3p4dy"><img src="https://i.imgur.com/uuaLiEE.png" alt="Mario Heardle Infinite" class="kofiimg mr-2 mb-1 svelte-1d3p4dy">Click here to play<p></p>Mario Heardle Infinite!</span>
+        <span class="kofitext svelte-1d3p4dy"><img src="https://i.imgur.com/uuaLiEE.png" alt="Mario Heardle Infinite" class="kofiimg mr-2 mb-1 svelte-1d3p4dy">Click here to play<p></p> {{ settings["heardle-name"] }} Heardle Infinite! </span>
       </a>
     </div>
   </div>

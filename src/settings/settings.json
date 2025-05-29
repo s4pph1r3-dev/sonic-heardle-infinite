@@ -1,4 +1,5 @@
 {
+  "heardle-name": "Mario",
   "guess-number": 6,
   "separator": [
     8, 16, 28, 44, 64, 100

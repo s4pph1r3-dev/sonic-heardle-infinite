@@ -9,6 +9,8 @@ import SupportModal from "@/components/Modals/SupportModal.vue";
 import TutorialModal from "@/components/Modals/TutorialModal.vue";
 import StatsModal from "@/components/Modals/StatsModal.vue";
 
+import settings from "@/settings/settings.json"
+
 const emit = defineEmits(['create-modal']);
 </script>
 
@@ -24,7 +26,7 @@ const emit = defineEmits(['create-modal']);
             <IconHeart/>
           </button>
         </div>
-        <h1 class="flex-grow text-center flex-1">Mario Heardle</h1>
+        <h1 class="flex-grow text-center flex-1">{{ settings["heardle-name"] }} Heardle</h1>
         <div class="button-container justify-end">
           <button @click="emit('create-modal', StatsModal)">
             <IconStats/>

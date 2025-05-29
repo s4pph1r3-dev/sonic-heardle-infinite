@@ -81,7 +81,7 @@ onBeforeUnmount(() => {
     <div class="list-text">
       <p>
         <a href="https://docs.google.com/spreadsheets/d/12vCtRU4cKzgTZk60kVveHRxQvdC2u0yS5pEISWeDlZo/edit#gid=0">
-          Click Here for the full list of Mario Heardle songs. <br/>
+          Click Here for the full list of {{ settings["heardle-name"] }} Heardle songs. <br/>
           <IconArrowDown class="arrow"/>
         </a>
       </p>
