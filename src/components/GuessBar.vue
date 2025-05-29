@@ -46,7 +46,7 @@ import IconCancel from "@/components/icons/IconCancel.vue";
   input {
     background: var(--color-bg);
     color: var(--color-fg);
-    border-color: var(--color-mg);
+    border-color: var(--color-textbox);
 
     padding: 0.75rem 0.75rem 0.75rem 2.25rem;
 
@@ -64,7 +64,7 @@ import IconCancel from "@/components/icons/IconCancel.vue";
     }
 
     &::placeholder {
-      color: var(--color-line);
+      color: var(--color-placeholder);
     }
   }
 }
@@ -106,7 +106,7 @@ import IconCancel from "@/components/icons/IconCancel.vue";
       background: var(--color-mg);
     }
     &.submit{
-      background: var(--color-positive);
+      background: var(--color-submit);
     }
   }
 

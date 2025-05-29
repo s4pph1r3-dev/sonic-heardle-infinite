@@ -23,6 +23,10 @@ onMounted(()=>{
 
   bar.appendChild(lastChild);
 })
+
+function Play(){
+  const button = document.getElementById("play-button");
+}
 </script>
 
 <template>
@@ -58,7 +62,7 @@ onMounted(()=>{
             </div>
           </div>
           <div class="item3">
-            <button class="play-button">
+            <button id="play-button" @click="Play">
               <div class="border">
                 <div class="icon ml-1 relative z-10">
                   <IconPlay/>
@@ -217,7 +221,7 @@ onMounted(()=>{
   justify-self: right;
 }
 
-.play-button{
+#play-button{
   padding: 0.5rem;
   text-transform: uppercase;
 

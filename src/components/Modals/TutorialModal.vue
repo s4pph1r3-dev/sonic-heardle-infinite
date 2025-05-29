@@ -80,7 +80,7 @@ onMounted(()=>{
 
   padding: 0.5rem;
 
-  background-color: var(--color-positive);
+  background-color: var(--color-submit);
 
   border-style: none;
 

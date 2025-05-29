@@ -23,6 +23,18 @@
     "type": "css",
     "value": "#888"
   },
+  "link": {
+    "type": "var",
+    "value": "line"
+  },
+  "active-field":{
+    "type": "var",
+    "value": "line"
+  },
+  "inactive-field": {
+    "type": "var",
+    "value": "mg"
+  },
   "color-shade": {
     "type": "css",
     "value": "rgba(0, 0, 0, 0.1)"
@@ -38,5 +50,25 @@
   "negative": {
     "type": "css",
     "value": "#ff0000"
+  },
+  "textbox": {
+    "type": "var",
+    "value": "inactive-field"
+  },
+  "placeholder": {
+    "type": "var",
+    "value": "line"
+  },
+  "submit": {
+    "type": "var",
+    "value": "positive"
+  },
+  "modal-border": {
+    "type": "var",
+    "value": "mg"
+  },
+  "button-highlight": {
+    "type": "css",
+    "value": "rgb(41, 171, 224)"
   }
 }

@@ -4,8 +4,6 @@ import IconX from "@/components/icons/IconX.vue";
 
 const emit = defineEmits(['close']);
 
-
-
 </script>
 
 <template>
@@ -78,7 +76,7 @@ const emit = defineEmits(['close']);
 
   background: var(--color-modal-bg);
 
-  border-color: var(--color-mg);
+  border-color: var(--color-modal-border);
   border-width: 1px;
 
   padding: 1.5rem;

@@ -38,7 +38,7 @@ p {
 }
 
 a {
-  background-color: rgb(41, 171, 224) !important;
+  background-color: var(--color-button-highlight);
   text-decoration: none;
   color: var(--color-fg);
 

@@ -102,7 +102,6 @@ main {
 
   flex-direction: column;
 }
-
 .game-container {
   width: 100%;
 
@@ -122,12 +121,9 @@ main {
     flex-direction: column;
   }
 }
-
 .guess-container {
   padding: 0.75rem;
-
 }
-
 .no-flex {
   flex: none;
 }
@@ -144,7 +140,7 @@ main {
   display: flex;
 
   a {
-    color: var(--color-line);
+    color: var(--color-link);
   }
 
   svg{
