@@ -93,4 +93,14 @@ main {
 .no-flex {
   flex: none;
 }
+@font-face {
+  font-family: basefont;
+  src: url("@/assets/fonts/font.otf") format("opentype");
+}
+
+@font-face {
+  font-family: titlefont;
+  src: url("@/assets/fonts/font.otf") format("opentype");
+}
+
 </style>
