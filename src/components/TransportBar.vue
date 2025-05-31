@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import {getCurrentInstance, onMounted, ref} from "vue";
+import {getCurrentInstance, onMounted, onUnmounted, ref} from "vue";
 import IconPlay from "@/components/icons/IconPlay.vue";
 import IconVolume from "@/components/icons/IconVolume.vue";
 import IconPlaying from "@/components/icons/IconPlaying.vue";
@@ -13,9 +13,9 @@ const isPlaying = ref(false);
 
 let player: SoundcloudPlayer;
 
-const isFinished = currentGameState.value.isFinished
+let isFinished = false;
 
-setInterval(() => {
+let seekBarInterval = setInterval(() => {
   const sb = document.getElementById('seekbar');
 
   if(isPlaying.value){
@@ -37,13 +37,12 @@ setInterval(() => {
         sb.style.width = (percentage*100) + "%";
       });
     }
-
   } else {
     sb.style.width = '0%';
   }
 }, 20);
 
-setInterval(() => {
+let sepSelectInterval = setInterval(() => {
   if(!isFinished){
     const bar = document.getElementById("bar");
     for(let i = 0; i < bar.children.length; i++){
@@ -58,6 +57,8 @@ setInterval(() => {
 
 onMounted(()=>{
   player = new SoundcloudPlayer(SelectedMusic.url);
+
+  isFinished = currentGameState.value.isFinished;
 
   if(!currentGameState.value.isFinished) {
 
@@ -78,6 +79,11 @@ onMounted(()=>{
 
     bar.appendChild(lastChild);
   }
+})
+
+onUnmounted(()=>{
+  clearInterval(seekBarInterval);
+  clearInterval(sepSelectInterval);
 })
 
 function ButtonClick(){
