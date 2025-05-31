@@ -1,6 +1,5 @@
 <script setup lang="ts">
-import settings from "@/settings/settings.json"
-import {onMounted} from "vue";
+import {getCurrentInstance, onMounted, ref} from "vue";
 import IconPlay from "@/components/icons/IconPlay.vue";
 import IconVolume from "@/components/icons/IconVolume.vue";
 import IconPlaying from "@/components/icons/IconPlaying.vue";
@@ -13,21 +12,39 @@ import {currentGameState, SelectedMusic} from "@/main"
 const isPlaying = ref(false);
 
 let player: SoundcloudPlayer;
+
+const isFinished = currentGameState.value.isFinished
+
 setInterval(() => {
   const sb = document.getElementById('seekbar');
 
   if(isPlaying.value){
     let percentage = 0;
+    if(isFinished){
+      player.GetCurrentMusicLength((n: number)=>{
+        let duration = n;
+
+        player.GetCurrentMusicTime((n2: number)=>{
+          percentage = n2 / duration;
+
+          sb.style.width = (percentage*100) + "%";
+        })
+      });
+    } else {
       player.GetCurrentMusicTime((n2: number)=>{
         percentage = n2 / (settings["times"][currentGameState.value.guess]*1000);
 
         sb.style.width = (percentage*100) + "%";
       });
+    }
+
   } else {
     sb.style.width = '0%';
   }
 }, 20);
+
 setInterval(() => {
+  if(!isFinished){
     const bar = document.getElementById("bar");
     for(let i = 0; i < bar.children.length; i++){
       const child = bar.children[i+1];
@@ -36,28 +53,33 @@ setInterval(() => {
         child.classList.add("sep-selected");
       }
     }
+  }
 }, 30);
 
 onMounted(()=>{
   player = new SoundcloudPlayer(SelectedMusic.url);
 
+  if(!currentGameState.value.isFinished) {
 
-  const lastChild = bar.lastChild;
-  bar.removeChild(lastChild);
+    const bar = document.getElementById("bar");
 
-  for(let i = 0; i < settings["guess-number"]; i++){
-    const el = document.createElement("div");
-    el.classList.add("separator");
-    if(i == 0) {
-      el.classList.add("sep-selected");
+    const lastChild = bar.lastChild;
+    bar.removeChild(lastChild);
+
+    for(let i = 0; i < settings["guess-number"]; i++){
+      const el = document.createElement("div");
+      el.classList.add("separator");
+      if(i == 0) {
+        el.classList.add("sep-selected");
+      }
+      el.style.setProperty("left", settings["separator"][i] + "%");
+      bar.appendChild(el);
     }
-    el.style.setProperty("left", settings["separator"][i] + "%");
 
-    bar.appendChild(el);
+    bar.appendChild(lastChild);
   }
-
-  bar.appendChild(lastChild);
 })
+
 function ButtonClick(){
   if(isPlaying.value) Stop()
   else Play()

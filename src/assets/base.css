@@ -50,5 +50,11 @@ html {
   --color-modal-border: var(--color-mg);
 
   --color-button-highlight: rgb(41, 171, 224);
+
+  --color-lg: var(--color-line);
+
+  --color-lost-card: var(--color-mg);
+  --color-win-card: var(--color-positive);
+
 }
 

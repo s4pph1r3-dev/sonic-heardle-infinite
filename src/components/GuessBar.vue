@@ -2,6 +2,88 @@
 
 import IconMagnifyingGlass from "@/components/icons/IconMagnifyingGlass.vue";
 import IconCancel from "@/components/icons/IconCancel.vue";
+import FuzzySearch from "fuzzy-search";
+
+import music from "@/settings/music.json"
+import settings from "@/settings/settings.json"
+
+import { currentGameState, SelectedMusic } from "@/main";
+import {onMounted} from "vue";
+
+const searcher = new FuzzySearch(music, ["title", "game"], {
+  sort: true
+});
+
+onMounted(() => {
+  document.getElementById("main").onclick = () => {
+    const autoCompleteList = document.getElementById('autoComplete_list')
+    autoCompleteList.setAttribute("hidden", "");
+  }
+})
+
+function GetAutocomplete(){
+  document.getElementById('autoComplete_list').removeAttribute('hidden');
+
+  const result = searcher.search(document.getElementById("autoComplete").value);
+
+  const autoCompleteList = document.getElementById("autoComplete_list");
+  autoCompleteList.innerHTML = "";
+
+  for(const item of result){
+    const li = document.createElement("li");
+    li.innerHTML = item.title + " - " + item.media;
+
+    li.onclick = ()=>{
+      autoCompleteList.setAttribute("hidden", "");
+      document.getElementById("autoComplete").value = item.title + " - " + item.media;
+    }
+
+    autoCompleteList.appendChild(li);
+  }
+}
+
+function OnSubmit(){
+  if(document.getElementById("autoComplete").value === undefined || document.getElementById("autoComplete").value === "") {
+    return;
+  }
+
+  let equalto = music.find((el)=>{
+    return (el.title + " - " + el.media) == document.getElementById("autoComplete").value;
+  })
+
+  currentGameState.value.guessed.push(
+      {
+        "name": document.getElementById("autoComplete").value,
+        "equal-to": equalto,
+        "isCorrect": equalto === (SelectedMusic)
+      }
+  )
+
+  Verify();
+}
+
+function OnSkip(){
+  currentGameState.value.guessed.push(
+      {
+        "name": "Skipped",
+        "equal-to": undefined,
+        "isCorrect": false
+      }
+  )
+
+  Verify();
+}
+
+function Verify(){
+  if(currentGameState.value.guessed[currentGameState.value.guessed.length - 1].isCorrect){
+    currentGameState.value.isFinished = true;
+  } else {
+    currentGameState.value.guess += 1;
+    if(currentGameState.value.guess >= settings["guess-number"]){
+      currentGameState.value.isFinished = true;
+    }
+  }
+}
 </script>
 
 <template>
@@ -10,17 +92,20 @@ import IconCancel from "@/components/icons/IconCancel.vue";
       <div>
         <div id="autocomplete-wrapper">
           <IconMagnifyingGlass class="glass"/>
-          <input class="" id="autoComplete" type="search" dir="ltr" spellcheck="false" autocorrect="off" autocomplete="off" autocapitalize="none" aria-controls="autoComplete_list_1" aria-autocomplete="both" placeholder="Know it? Search for the game / title" role="combobox" aria-owns="autoComplete_list_1" aria-haspopup="true" aria-expanded="false">
-          <ul id="autoComplete_list_1" role="listbox" hidden=""></ul>
+          <input class="" id="autoComplete" type="search" dir="ltr" spellcheck="false" autocorrect="off" autocomplete="off" autocapitalize="none"
+                 aria-controls="autoComplete_list_1" aria-autocomplete="both" placeholder="Know it? Search for the game / title"
+                 role="combobox" aria-owns="autoComplete_list" aria-haspopup="true" aria-expanded="false"
+                 @input="GetAutocomplete">
+          <ul id="autoComplete_list" role="listbox" hidden=""></ul>
           <div class="close">
             <IconCancel/>
           </div>
         </div>
         <div class="button-container">
-          <button class="skip   svelte-1r54uzk">
-            Skip <span class="tracking-normal lowercase">(+1s)</span>
+          <button class="skip   svelte-1r54uzk" @click="OnSkip">
+            Skip <span class="tracking-normal lowercase" v-if="currentGameState.guess < settings['guess-number']-1">(+{{ settings["times"][currentGameState.guess+1] - settings["times"][currentGameState.guess] }}s)</span>
           </button>
-          <button class="submit svelte-1r54uzk">
+          <button class="submit svelte-1r54uzk" @click="OnSubmit">
             Submit
           </button>
         </div>
@@ -56,6 +141,7 @@ import IconCancel from "@/components/icons/IconCancel.vue";
 
     font-family: inherit;
     font-size: 1.5rem;
+
 
     /*focus:outline-none focus:border-custom-positive w-full p-3 pl-9 placeholder:text-custom-line bg-custom-bg text-custom-fg border-custom-mg*/
     &:focus{
@@ -98,8 +184,6 @@ import IconCancel from "@/components/icons/IconCancel.vue";
 
     align-items: center;
     font-weight: 10;
-
-    font-size: 1.75rem;
     line-height: 1.3rem;
 
     &.skip{
@@ -109,6 +193,38 @@ import IconCancel from "@/components/icons/IconCancel.vue";
       background: var(--color-submit);
     }
   }
+}
 
+[hidden] {
+  display: none;
+}
+
+#autoComplete_list {
+  border-radius: 4px 4px 0 0;
+  top: auto !important;
+  bottom: 100% !important;
+  z-index: 100;
+  font-size: 1.20rem;
+  position: absolute;
+  background: var(--color-bg);
+  width: 100%;
+  border: 1px solid var(--color-mg);
+  max-height: 500px;
+  overflow-y: auto;
+
+  padding: 0;
+  margin: 0;
+
+  list-style: none;
+}
+</style>
+
+<style>
+#autoComplete_list li {
+  padding: 0.4rem 0.65rem;
+  width: 100%;
+  border-bottom: 1px solid var(--color-mg);
+  letter-spacing: 1px;
+  line-height: 0.75;
 }
 </style>
