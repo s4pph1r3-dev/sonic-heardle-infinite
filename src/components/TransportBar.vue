@@ -127,6 +127,9 @@ function getUnlockedBarWidth() : number{
   return settings.separator[currentGameState.value.guess];
 }
 
+function changeVolume(e: MouseEvent){
+}
+
 </script>
 
 <template>
@@ -155,9 +158,9 @@ function getUnlockedBarWidth() : number{
               <IconVolume/>
             </button>
             <div class="volume-control">
-              <div class="slider" role="slider" aria-label="Volume" aria-valuemin="0" aria-valuemax="100" aria-valuenow="50" tabindex="0">
-                <div class="slider-fill" style="width: 50%;"></div>
-                <div class="slider-thumb" style="left: 50%;"></div>
+              <div id="slider" role="slider" aria-label="Volume" aria-valuemin="0" aria-valuemax="100" aria-valuenow="50" tabindex="0" @mousemove="changeVolume">
+                <div id="slider-fill" style="width: 20%;"></div>
+                <div id="slider-thumb" style="left: 20%;"></div>
               </div>
             </div>
           </div>
@@ -283,21 +286,21 @@ function getUnlockedBarWidth() : number{
     width: 100px;
     position: relative;
 
-    .slider{
+    #slider{
       position: relative;
       height: 10px;
       background-color: grey;
       border-radius: 2px;
       cursor: pointer;
 
-      .slider-fill{
+      #slider-fill{
         position: absolute;
         height: 100%;
         background-color: white;
         border-radius: 2px;
       }
 
-      .slider-thumb{
+      #slider-thumb{
         position: absolute;
         width: 20px;
         height: 20px;
