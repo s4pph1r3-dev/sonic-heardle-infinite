@@ -46,12 +46,12 @@ setInterval(()=>{
   <div class="max-w-screen-sm main-container">
     <SoundcloudMusicLink :is-won="currentGameState.guessed[currentGameState.guessed.length-1].isCorrect"/>
     <div class="summary-container">
-      <p class="guess-number"> {{ currentGameState.guessed[currentGameState.guessed.length-1].isCorrect ? currentGameState.guessed.length.toString() : '0' }} </p>
+      <p class="guess-number font-big"> {{ currentGameState.guessed[currentGameState.guessed.length-1].isCorrect ? currentGameState.guessed.length.toString() : '0' }} </p>
       <GuessSummary class="summary"/>
       <p class="second-text" v-if="currentGameState.guessed[currentGameState.guessed.length-1].isCorrect"> You got today's {{ settings["heardle-name"] }} Heardle within {{ settings["times"][currentGameState.guessed.length-1] }} seconds. </p>
       <p class="second-text" v-else> You didn't get today's {{ settings["heardle-name"] }} Heardle. Better luck tomorrow! 💎 </p>
-      <div class="share flex flex-col justify-center items-center pt-3">
-        <button class="border-none font-semibold text-sm svelte-1r54uzk bg-custom-positive">
+      <div class="share">
+        <button class="font-medium">
           Share
           <IconShare class="inline-block ml-2"/>
         </button>
@@ -59,8 +59,8 @@ setInterval(()=>{
     </div>
     <div>
       <div class="timer-container">
-        <div class="next-text">The next Mario song starts in:</div>
-        <div id="timer">14:25:42</div>
+        <div class="next-text font-medium">The next {{ settings["heardle-name"] }} song starts in:</div>
+        <div id="timer" class="font-big">14:25:42</div>
       </div>
       <div class="infinite-button-container">
         <div class="margin"></div>
@@ -91,9 +91,6 @@ setInterval(()=>{
   padding: 0 0.75rem;
 
   .guess-number {
-    font-size: 2.125rem;
-    line-height: 1.75rem;
-
     color: var(--color-lg)
   }
   .summary{
@@ -125,9 +122,6 @@ setInterval(()=>{
       text-indent: 0.25em;
       letter-spacing: 0.2em;
 
-      font-size: 1.75rem;
-      line-height: 1.3rem;
-
       border: none;
 
       background-color: var(--color-positive);
@@ -157,8 +151,6 @@ setInterval(()=>{
   margin: 0 0.75rem 1.5rem;
 
   .next-text{
-    font-size: 1.75rem;
-    line-height: 1.3rem;
     text-align: center;
     color: var(--color-lg);
   }
@@ -166,8 +158,6 @@ setInterval(()=>{
   #timer {
     text-indent: 0.25em;
     letter-spacing: 0.2em;
-    font-size: 2.125rem;
-    line-height: 1.75rem;
   }
 }
 </style>

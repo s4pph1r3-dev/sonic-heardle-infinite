@@ -57,6 +57,8 @@ onMounted(() => {
     openModal(TutorialModal);
     window.localStorage.setItem('firstPlay', 'false');
   }
+
+  document.title = settings["heardle-name"] + " Heardle"
 });
 
 onBeforeUnmount(() => {

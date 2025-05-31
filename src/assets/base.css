@@ -1,9 +1,6 @@
 /* color palette from <https://github.com/vuejs/theme> */
 
-@font-face {
-  font-family: testfont;
-  src: url("@/assets/fonts/font.otf") format("opentype");
-}
+
 
 *, ::before,
 ::after {

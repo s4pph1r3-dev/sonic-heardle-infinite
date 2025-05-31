@@ -17,7 +17,7 @@ const emit = defineEmits(['create-modal']);
 <template>
   <header>
     <div class="max-w-screen-md mx-auto">
-      <div class="flex main-container">
+      <div class="main-container">
         <div class="button-container">
           <button @click="emit('create-modal', AboutModal)">
             <IconInfo/>
@@ -26,7 +26,7 @@ const emit = defineEmits(['create-modal']);
             <IconHeart/>
           </button>
         </div>
-        <h1 class="flex-grow text-center flex-1">{{ settings["heardle-name"] }} Heardle</h1>
+        <h1 class="font-title">{{ settings["heardle-name"] }} Heardle</h1>
         <div class="button-container justify-end">
           <button @click="emit('create-modal', StatsModal)">
             <IconStats/>
@@ -48,6 +48,7 @@ const emit = defineEmits(['create-modal']);
   }
 
   .main-container{
+    display: flex;
     justify-content: space-evenly;
     color: var(--color-fg);
     padding: 0.75rem;
@@ -64,9 +65,7 @@ const emit = defineEmits(['create-modal']);
   }
 
   h1 {
-    font-size: 3.5rem;
     font-weight: 10;
-    line-height: 2rem;
     text-align: center;
     flex: 1 1 0%;
   }

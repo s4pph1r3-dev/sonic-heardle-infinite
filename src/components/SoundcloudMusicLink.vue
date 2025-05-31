@@ -13,7 +13,7 @@ const props = defineProps({
       <div class="title-card" :won="isWon ? 'true' : 'false'">
         <div class="title">
           <p> {{ SelectedMusic.media }} </p>
-          <p class="title-text"> {{ SelectedMusic.title }} </p>
+          <p class="title-text font-medium"> {{ SelectedMusic.title }} </p>
         </div>
         <SoundcloudLogo/>
       </div>
@@ -50,7 +50,6 @@ const props = defineProps({
       margin-right: 0.75rem;
 
       .title-text{
-        font-size: 1.75rem;
         line-height: 1.3rem;
       }
     }
