@@ -3,9 +3,44 @@ import settings from "@/settings/settings.json"
 import {onMounted} from "vue";
 import IconPlay from "@/components/icons/IconPlay.vue";
 import IconVolume from "@/components/icons/IconVolume.vue";
+import IconPlaying from "@/components/icons/IconPlaying.vue";
+
+import settings from "@/settings/settings.json"
+import {SoundcloudPlayer} from "@/players/SoundcloudPlayer";
+
+import {currentGameState, SelectedMusic} from "@/main"
+
+const isPlaying = ref(false);
+
+let player: SoundcloudPlayer;
+setInterval(() => {
+  const sb = document.getElementById('seekbar');
+
+  if(isPlaying.value){
+    let percentage = 0;
+      player.GetCurrentMusicTime((n2: number)=>{
+        percentage = n2 / (settings["times"][currentGameState.value.guess]*1000);
+
+        sb.style.width = (percentage*100) + "%";
+      });
+  } else {
+    sb.style.width = '0%';
+  }
+}, 20);
+setInterval(() => {
+    const bar = document.getElementById("bar");
+    for(let i = 0; i < bar.children.length; i++){
+      const child = bar.children[i+1];
+      child.classList.remove("sep-selected");
+      if(i === currentGameState.value.guess){
+        child.classList.add("sep-selected");
+      }
+    }
+}, 30);
 
 onMounted(()=>{
-  const bar = document.getElementById("bar");
+  player = new SoundcloudPlayer(SelectedMusic.url);
+
 
   const lastChild = bar.lastChild;
   bar.removeChild(lastChild);
@@ -23,10 +58,47 @@ onMounted(()=>{
 
   bar.appendChild(lastChild);
 })
+function ButtonClick(){
+  if(isPlaying.value) Stop()
+  else Play()
+}
 
 function Play(){
   const button = document.getElementById("play-button");
+  const icon = document.getElementById("icon");
+
+  console.log(SelectedMusic.title);
+
+  isPlaying.value = true;
+
+  if(currentGameState.value.isFinished){
+    player.PlayMusicUntilEnd(null, null);
+  } else {
+    player.PlayMusic(settings["times"][currentGameState.value.guess], null, ()=>{
+      Stop();
+    });
+  }
+
+  icon.classList.add("playing");
+
 }
+
+function Stop(){
+  const button = document.getElementById("play-button");
+  const icon = document.getElementById("icon");
+
+  isPlaying.value = false;
+
+  player.StopMusic();
+
+  icon.classList.remove("playing");
+}
+
+function getUnlockedBarWidth() : number{
+  if(currentGameState.value.isFinished) return 100;
+  return settings.separator[currentGameState.value.guess];
+}
+
 </script>
 
 <template>
@@ -34,8 +106,8 @@ function Play(){
   <div class="playbar">
     <div class="max-w-screen-sm bar-grid-container">
       <div class="bar-grid">
-        <div id="unlocked-bar" style="width: 8%">
-          <div class="seekbar" style="width: 20%;"></div>
+        <div id="unlocked-bar" :style="'width: ' + getUnlockedBarWidth() + '%'">
+          <div id="seekbar"></div>
         </div>
         <div id="bar">
           <div></div>
@@ -62,10 +134,11 @@ function Play(){
             </div>
           </div>
           <div class="item3">
-            <button id="play-button" @click="Play">
+            <button id="play-button" @click="ButtonClick">
               <div class="border">
-                <div class="icon ml-1 relative z-10">
-                  <IconPlay/>
+                <div id="icon">
+                  <IconPlay v-if="!isPlaying"/>
+                  <IconPlaying v-else/>
                 </div>
               </div>
             </button>
@@ -84,7 +157,7 @@ function Play(){
   border-top-width: 1px;
 }
 
-.seekbar {
+#seekbar {
   background-color: var(--color-positive);
   height: 100%;
   position: absolute;
@@ -256,10 +329,19 @@ function Play(){
 
     overflow: hidden;
 
-    .icon{
-      margin-right: 0.25rem;
+    #icon{
+      margin-right: 0.65rem;
       z-index: 10;
       position: relative;
+
+      &.playing{
+        transform: scale(1.5);
+        margin-right: 0rem !important;
+      }
+      &:not(.playing){
+        width: 24px;
+        height: 24px;
+      }
     }
   }
 }
