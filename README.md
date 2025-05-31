@@ -13,10 +13,10 @@ and easy to use to modify simple aspect easily. One feature is using .json file 
 This allows easier updatability even if you are not a developer.
 
 ## Roadmap
-- [ ] Feature Clone of the Mario Heardle.
-- [ ] Easily expandable architecture.
-- [ ] Easy theme manager
-- [ ] Fix "end of playlist" bug of the original Heardle.
+- [x] Feature Clone of the Mario Heardle.
+- [x] Easily expandable architecture.
+- [x] Easy theme manager
+- [x] Fix "end of playlist" bug of the original Heardle.
 - [ ] Difficulty Settings.
 - [ ] Documentation
 
