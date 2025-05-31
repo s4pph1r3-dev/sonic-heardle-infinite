@@ -28,6 +28,15 @@ setInterval(() => {
   }
 }, 20);
 setInterval(() => {
+    const bar = document.getElementById("bar");
+    for(let i = 0; i < bar.children.length; i++){
+      const child = bar.children[i+1];
+      child.classList.remove("sep-selected");
+      if(i === currentGameState.value.guess){
+        child.classList.add("sep-selected");
+      }
+    }
+}, 30);
 
 onMounted(()=>{
   player = new SoundcloudPlayer(SelectedMusic.url);
