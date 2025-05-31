@@ -13,6 +13,21 @@ import {currentGameState, SelectedMusic} from "@/main"
 const isPlaying = ref(false);
 
 let player: SoundcloudPlayer;
+setInterval(() => {
+  const sb = document.getElementById('seekbar');
+
+  if(isPlaying.value){
+    let percentage = 0;
+      player.GetCurrentMusicTime((n2: number)=>{
+        percentage = n2 / (settings["times"][currentGameState.value.guess]*1000);
+
+        sb.style.width = (percentage*100) + "%";
+      });
+  } else {
+    sb.style.width = '0%';
+  }
+}, 20);
+setInterval(() => {
 
 onMounted(()=>{
   player = new SoundcloudPlayer(SelectedMusic.url);
@@ -70,6 +85,11 @@ function Stop(){
   icon.classList.remove("playing");
 }
 
+function getUnlockedBarWidth() : number{
+  if(currentGameState.value.isFinished) return 100;
+  return settings.separator[currentGameState.value.guess];
+}
+
 </script>
 
 <template>
@@ -77,8 +97,8 @@ function Stop(){
   <div class="playbar">
     <div class="max-w-screen-sm bar-grid-container">
       <div class="bar-grid">
-        <div id="unlocked-bar" style="width: 8%">
-          <div class="seekbar" style="width: 20%;"></div>
+        <div id="unlocked-bar" :style="'width: ' + getUnlockedBarWidth() + '%'">
+          <div id="seekbar"></div>
         </div>
         <div id="bar">
           <div></div>
@@ -128,7 +148,7 @@ function Stop(){
   border-top-width: 1px;
 }
 
-.seekbar {
+#seekbar {
   background-color: var(--color-positive);
   height: 100%;
   position: absolute;
