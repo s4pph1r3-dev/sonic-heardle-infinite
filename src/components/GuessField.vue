@@ -21,7 +21,7 @@ console.log("")
     <IconEmptyBox v-else-if="music != undefined" class="cross"/>
 
     <div class="name-parent" v-if="music != undefined">
-      <div class="name" v-if="music.name != 'Skipped'"> {{ music.name }} </div>
+      <div class="name font-medium" v-if="music.name != 'Skipped'"> {{ music.name }} </div>
       <div class="skipped" v-else >SKIPPED </div>
     </div>
 
@@ -82,8 +82,6 @@ console.log("")
   .name {
     --tw-text-opacity: 1;
     color: rgba(255, 255, 255, var(--tw-text-opacity));
-    font-size: 1.75rem;
-    line-height: 1.3rem;
   }
 
   .skipped {

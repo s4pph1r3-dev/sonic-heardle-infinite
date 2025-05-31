@@ -96,7 +96,7 @@ function Verify(){
       <div>
         <div id="autocomplete-wrapper">
           <IconMagnifyingGlass class="glass"/>
-          <input class="" id="autoComplete" type="search" dir="ltr" spellcheck="false" autocorrect="off" autocomplete="off" autocapitalize="none"
+          <input class="font-input" id="autoComplete" type="search" dir="ltr" spellcheck="false" autocorrect="off" autocomplete="off" autocapitalize="none"
                  aria-controls="autoComplete_list_1" aria-autocomplete="both" placeholder="Know it? Search for the game / title"
                  role="combobox" aria-owns="autoComplete_list" aria-haspopup="true" aria-expanded="false"
                  @input="GetAutocomplete">
@@ -142,10 +142,6 @@ function Verify(){
     outline-offset: -2px;
 
     width: 100%;
-
-    font-family: inherit;
-    font-size: 1.5rem;
-
 
     /*focus:outline-none focus:border-custom-positive w-full p-3 pl-9 placeholder:text-custom-line bg-custom-bg text-custom-fg border-custom-mg*/
     &:focus{
