@@ -70,5 +70,17 @@
   "button-highlight": {
     "type": "css",
     "value": "rgb(41, 171, 224)"
+  },
+  "lg": {
+    "type": "var",
+    "value": "line"
+  },
+  "lost-card": {
+    "type": "var",
+    "value": "mg"
+  },
+  "win-card": {
+    "type": "var",
+    "value": "positive"
   }
 }

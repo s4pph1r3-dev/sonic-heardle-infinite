@@ -1,4 +1,4 @@
-<script setup>
+<script setup lang="ts">
 // Component imports
 import Header from "@/components/Header.vue";
 import ModalBase from "@/components/Modals/ModalBase.vue";
@@ -17,6 +17,10 @@ import GuessField from "@/components/GuessField.vue";
 import TransportBar from "@/components/TransportBar.vue";
 import IconArrowDown from "@/components/icons/IconArrowDown.vue";
 import GuessBar from "@/components/GuessBar.vue";
+import MainGame from "@/components/MainGame.vue";
+
+import { currentGameState } from "@/main";
+import EndGame from "@/components/EndGame.vue";
 
 // CSS Variables
 const colors = {};
@@ -69,25 +73,8 @@ onBeforeUnmount(() => {
     <div class="no-flex">
       <Header @create-modal="(modal)=>openModal(modal)"/>
     </div>
-    <div class="game-container">
-      <div class="max-w-screen-sm">
-        <div class="guess-container">
-          <template v-for="n in settings['guess-number']">
-            <GuessField :active="(n === 1)"/>
-          </template>
-        </div>
-      </div>
-    </div>
-    <div class="list-text">
-      <p>
-        <a href="https://docs.google.com/spreadsheets/d/12vCtRU4cKzgTZk60kVveHRxQvdC2u0yS5pEISWeDlZo/edit#gid=0">
-          Click Here for the full list of {{ settings["heardle-name"] }} Heardle songs. <br/>
-          <IconArrowDown class="arrow"/>
-        </a>
-      </p>
-    </div>
-    <TransportBar/>
-    <GuessBar/>
+    <MainGame v-if="!currentGameState.isFinished"/>
+    <EndGame v-else/>
   </main>
 </template>
 
@@ -102,53 +89,8 @@ main {
 
   flex-direction: column;
 }
-.game-container {
-  width: 100%;
 
-  display: flex;
-  flex-direction: column;
-  flex-grow: 1;
-  position: relative;
-  .max-w-screen-sm {
-    width: 100%;
-    height: 100%;
-
-    overflow: auto;
-    justify-content: space-between;
-
-    margin-left : auto;
-    margin-right : auto;
-    flex-direction: column;
-  }
-}
-.guess-container {
-  padding: 0.75rem;
-}
 .no-flex {
   flex: none;
-}
-
-.list-text{
-  font-size: 1.75rem;
-  line-height: 1.3rem;
-
-  text-align: center;
-
-  padding: 0.75rem;
-  align-items: center;
-  flex-direction: column;
-  display: flex;
-
-  a {
-    color: var(--color-link);
-  }
-
-  svg{
-    margin-top: 0.5rem;
-  }
-}
-
-.arrow {
-  margin-top: 0.5rem;
 }
 </style>

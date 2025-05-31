@@ -1,10 +1,59 @@
 {
-  "heardle-name": "Mario",
+  "heardle-name": "Kirby Air Ride",
   "guess-number": 6,
+  "times": [
+    1, 2, 4, 8, 16, 32
+  ],
   "separator": [
     8, 16, 28, 44, 64, 100
   ],
   "tag-list": [
-    "year", "console", "series", "game", "game-genre"
-  ]
+    {
+      "name": "year",
+      "display-name": "Year",
+      "type": "plus-minus",
+      "word": {
+        "+": "Older",
+        "-": "Newer",
+        "=": "correct"
+      }
+    },
+    {
+      "name": "console",
+      "display-name": "Console",
+      "type": "equal",
+      "word": {
+        "=": "correct",
+        "!=": "incorrect"
+      }
+    },
+    {
+      "name": "series",
+      "display-name": "Series",
+      "type": "equal",
+      "word": {
+        "=": "correct",
+        "!=": "incorrect"
+      }
+    },
+    {
+      "name": "game",
+      "display-name": "Game",
+      "type": "equal",
+      "word": {
+        "=": "correct",
+        "!=": "incorrect"
+      }
+    },
+    {
+      "name": "game-genre",
+      "display-name": "Genre",
+      "type": "equal",
+      "word": {
+        "=": "correct",
+        "!=": "incorrect"
+      }
+    }
+  ],
+  "infinite": false
 }
