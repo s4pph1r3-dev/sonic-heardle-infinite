@@ -59,6 +59,8 @@ function OnSubmit(){
       }
   )
 
+  document.getElementById("autoComplete").value = ""
+
   Verify();
 }
 
@@ -70,6 +72,8 @@ function OnSkip(){
         "isCorrect": false
       }
   )
+
+  document.getElementById("autoComplete").value = ""
 
   Verify();
 }
