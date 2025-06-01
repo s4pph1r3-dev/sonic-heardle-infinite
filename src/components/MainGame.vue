@@ -21,9 +21,9 @@ import { currentGameState } from "@/main";
       </div>
     </div>
   </div>
-  <div class="list-text font-medium">
+  <div class="list-text font-medium" v-if="settings['song-list-link'] !== '' && settings['song-list-link'] !== null && settings['song-list-link'] !== undefined" >
     <p>
-      <a href="https://docs.google.com/spreadsheets/d/12vCtRU4cKzgTZk60kVveHRxQvdC2u0yS5pEISWeDlZo/edit#gid=0">
+      <a :href="settings['song-list-link']">
         Click Here for the full list of {{ settings["heardle-name"] }} Heardle songs. <br/>
         <IconArrowDown class="arrow"/>
       </a>
