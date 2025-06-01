@@ -17,6 +17,7 @@ let isFinished = false;
 
 let volumeInterval: number | undefined = undefined;
 
+let muted = ref(false);
 
 let seekBarInterval = setInterval(() => {
   const sb = document.getElementById('seekbar');
@@ -138,6 +139,23 @@ function getUnlockedBarWidth() : number{
 
 function changeVolume(e: InputEvent){
   player.SetVolume(e.target.value);
+  muted.value = false;
+
+  if(e.target.value <= 0){
+    muted.value = true;
+  }
+}
+
+function mute(){
+  if(muted.value){
+    muted.value = false;
+    player.SetVolume(50);
+    document.getElementById("slider").value = 50;
+  } else {
+    muted.value = true;
+    player.SetVolume(0);
+    document.getElementById("slider").value = 0;
+  }
 }
 
 </script>
@@ -164,8 +182,8 @@ function changeVolume(e: InputEvent){
         <div class="container with-volume">
           <div class="item1">0:00</div>
           <div class="item2">
-            <button>
-              <IconVolume/>
+            <button @click="mute">
+              <IconVolume :muted="muted"/>
             </button>
             <div class="volume-control">
               <!--<div id="slider" role="slider" aria-label="Volume" aria-valuemin="0" aria-valuemax="100" aria-valuenow="50" tabindex="0" @mousemove="changeVolume">
