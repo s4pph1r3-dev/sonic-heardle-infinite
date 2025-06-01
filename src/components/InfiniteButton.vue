@@ -5,8 +5,8 @@ import settings from "@/settings/settings.json"
 </script>
 
 <template>
-  <div>
-    <a href="https://mario-heardle-infinite.glitch.me/" title="Mario Heardle Infinite">
+  <div v-if="settings['variant-link'] !== '' && settings['variant-link'] !== null && settings['variant-link'] !== undefined">
+    <a :href="settings['variant-link']" title="Mario Heardle Infinite">
       <span>
         <IconInfinite/> Click here to play <p></p> {{ settings["heardle-name"] }} Heardle Infinite!
       </span>
