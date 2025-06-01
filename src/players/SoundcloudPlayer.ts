@@ -3,6 +3,7 @@ import { Player } from "./PlayerBase"
 export class SoundcloudPlayer extends Player {
     Widget: any;
     Playing: boolean;
+    Volume: number;
 
     constructor(url: string){
         super(url);
@@ -28,6 +29,9 @@ export class SoundcloudPlayer extends Player {
         }, 200);
 
         this.Widget = SC.Widget(iframe);
+
+        this.Volume = 50
+        this.Widget.setVolume(this.Volume)
     }
 
     override PlayMusicUntilEnd(started_callback: () => void | null, finished_callback: () => void | null): void
@@ -78,5 +82,14 @@ export class SoundcloudPlayer extends Player {
         this.Widget.getDuration((n: number)=>{
             callback(n);
         });
+    }
+
+    override GetVolume(): number {
+        return this.Volume;
+    }
+
+    override SetVolume(volume: number): void {
+        this.Volume = volume;
+        this.Widget.setVolume(volume)
     }
 }

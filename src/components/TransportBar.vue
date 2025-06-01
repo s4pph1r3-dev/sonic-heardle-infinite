@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import {getCurrentInstance, onMounted, onUnmounted, ref} from "vue";
+import {onMounted, onUnmounted, ref} from "vue";
 import IconPlay from "@/components/icons/IconPlay.vue";
 import IconVolume from "@/components/icons/IconVolume.vue";
 import IconPlaying from "@/components/icons/IconPlaying.vue";
@@ -15,12 +15,17 @@ let player: SoundcloudPlayer;
 
 let isFinished = false;
 
+let volumeInterval: number | undefined = undefined;
+
+let muted = ref(false);
+
 let seekBarInterval = setInterval(() => {
   const sb = document.getElementById('seekbar');
+  const item1 = document.getElementsByClassName('item1')[0];
 
   if(isPlaying.value){
     let percentage = 0;
-    if(isFinished){
+    if(isFinished.value){
       player.GetCurrentMusicLength((n: number)=>{
         let duration = n;
 
@@ -28,6 +33,8 @@ let seekBarInterval = setInterval(() => {
           percentage = n2 / duration;
 
           sb.style.width = (percentage*100) + "%";
+
+          item1.innerHTML = Math.floor((n2/1000)/60).toString() + ':' + Math.round(Math.floor(n2/1000)%60).toString().padStart(2, "0");
         })
       });
     } else {
@@ -35,8 +42,11 @@ let seekBarInterval = setInterval(() => {
         percentage = n2 / (settings["times"][currentGameState.value.guess]*1000);
 
         sb.style.width = (percentage*100) + "%";
+
+        item1.innerHTML = Math.floor((n2/1000)/60).toString() + ':' + Math.round(Math.floor(n2/1000)%60).toString().padStart(2, "0");
       });
     }
+
   } else {
     sb.style.width = '0%';
   }
@@ -127,6 +137,27 @@ function getUnlockedBarWidth() : number{
   return settings.separator[currentGameState.value.guess];
 }
 
+function changeVolume(e: InputEvent){
+  player.SetVolume(e.target.value);
+  muted.value = false;
+
+  if(e.target.value <= 0){
+    muted.value = true;
+  }
+}
+
+function mute(){
+  if(muted.value){
+    muted.value = false;
+    player.SetVolume(50);
+    document.getElementById("slider").value = 50;
+  } else {
+    muted.value = true;
+    player.SetVolume(0);
+    document.getElementById("slider").value = 0;
+  }
+}
+
 </script>
 
 <template>
@@ -151,14 +182,17 @@ function getUnlockedBarWidth() : number{
         <div class="container with-volume">
           <div class="item1">0:00</div>
           <div class="item2">
-            <button>
-              <IconVolume/>
+            <button @click="mute">
+              <IconVolume :muted="muted"/>
             </button>
             <div class="volume-control">
-              <div class="slider" role="slider" aria-label="Volume" aria-valuemin="0" aria-valuemax="100" aria-valuenow="50" tabindex="0">
-                <div class="slider-fill" style="width: 50%;"></div>
-                <div class="slider-thumb" style="left: 50%;"></div>
+              <!--<div id="slider" role="slider" aria-label="Volume" aria-valuemin="0" aria-valuemax="100" aria-valuenow="50" tabindex="0" @mousemove="changeVolume">
+                <div id="slider-fill"></div>
+                <div id="slider-thumb"></div>
               </div>
+              -->
+              <input id="slider" type="range" min="0" max="100" name="volume" @input="changeVolume">
+
             </div>
           </div>
           <div class="item3">
@@ -275,38 +309,44 @@ function getUnlockedBarWidth() : number{
   align-items: center;
 
   button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     margin-right: 15px;
     border: none;
+
+    padding: 0;
+    margin-bottom: 0;
   }
 
   .volume-control{
     width: 100px;
     position: relative;
 
-    .slider{
-      position: relative;
+
+    #slider{
       height: 10px;
       background-color: grey;
       border-radius: 2px;
-      cursor: pointer;
+      border: none;
+      width: 100px;
 
-      .slider-fill{
-        position: absolute;
-        height: 100%;
-        background-color: white;
-        border-radius: 2px;
+      padding: 0;
+      margin: 0;
+
+      &::-moz-range-thumb {
+        padding: 0;
+        margin: 0;
+
+        background-color: var(--color-fg);
       }
 
-      .slider-thumb{
-        position: absolute;
-        width: 20px;
-        height: 20px;
-        background-color: white;
-        top: 50%;
-        transform: translate(-50%, -50%);
-        box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
-        border-radius: 50%;
-        cursor: pointer;
+      &::-moz-range-progress{
+        background-color: var(--color-fg);
+        padding: 0;
+        margin: 0;
+
+        height: 100%;
       }
     }
   }
