@@ -17,8 +17,6 @@ let isFinished = ref(false);
 
 let lengthInSecond = ref(0);
 
-let volumeInterval: number | undefined = undefined;
-
 let muted = ref(false);
 
 let seekBarInterval = setInterval(() => {
@@ -194,13 +192,7 @@ function mute(){
               <IconVolume :muted="muted"/>
             </button>
             <div class="volume-control">
-              <!--<div id="slider" role="slider" aria-label="Volume" aria-valuemin="0" aria-valuemax="100" aria-valuenow="50" tabindex="0" @mousemove="changeVolume">
-                <div id="slider-fill"></div>
-                <div id="slider-thumb"></div>
-              </div>
-              -->
               <input id="slider" type="range" min="0" max="100" name="volume" @input="changeVolume">
-
             </div>
           </div>
           <div class="item3">
