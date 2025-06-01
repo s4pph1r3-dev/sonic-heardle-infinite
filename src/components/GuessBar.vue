@@ -106,10 +106,10 @@ function Verify(){
           </div>
         </div>
         <div class="button-container">
-          <button class="skip   svelte-1r54uzk" @click="OnSkip">
+          <button class="skip" @click="OnSkip">
             Skip <span class="tracking-normal lowercase" v-if="currentGameState.guess < settings['guess-number']-1">(+{{ settings["times"][currentGameState.guess+1] - settings["times"][currentGameState.guess] }}s)</span>
           </button>
-          <button class="submit svelte-1r54uzk" @click="OnSubmit">
+          <button class="submit" @click="OnSubmit">
             Submit
           </button>
         </div>

@@ -13,7 +13,9 @@ const isPlaying = ref(false);
 
 let player: SoundcloudPlayer;
 
-let isFinished = false;
+let isFinished = ref(false);
+
+let lengthInSecond = ref(0);
 
 let volumeInterval: number | undefined = undefined;
 
@@ -57,6 +59,7 @@ let sepSelectInterval = setInterval(() => {
     const bar = document.getElementById("bar");
     for(let i = 0; i < bar.children.length; i++){
       const child = bar.children[i+1];
+      if(child !== undefined)
       child.classList.remove("sep-selected");
       if(i === currentGameState.value.guess){
         child.classList.add("sep-selected");
@@ -68,7 +71,7 @@ let sepSelectInterval = setInterval(() => {
 onMounted(()=>{
   player = new SoundcloudPlayer(SelectedMusic.url);
 
-  isFinished = currentGameState.value.isFinished;
+  isFinished.value = currentGameState.value.isFinished;
 
   if(!currentGameState.value.isFinished) {
 
@@ -89,6 +92,10 @@ onMounted(()=>{
 
     bar.appendChild(lastChild);
   }
+
+  player.GetCurrentMusicLength((n: number)=>{
+    lengthInSecond.value = Math.round(n/1000);
+  })
 })
 
 onUnmounted(()=>{
@@ -180,7 +187,8 @@ function mute(){
     <div class="max-w-screen-sm">
       <div class="transport-container">
         <div class="container with-volume">
-          <div class="item1">0:00</div>
+          <div class="item1" v-if="!isPlaying">0:00</div>
+          <div class="item1" v-else> </div>
           <div class="item2">
             <button @click="mute">
               <IconVolume :muted="muted"/>
@@ -205,7 +213,8 @@ function mute(){
               </div>
             </button>
           </div>
-          <div class="item4">0:25</div>
+          <div class="item4" v-if="!isFinished">{{ Math.floor(settings["times"][settings["guess-number"]-1]/60).toString() + ':' + (settings["times"][settings["guess-number"]-1]%60).toString().padStart(2, "0") }}</div>
+          <div class="item4" v-else>{{ Math.floor(lengthInSecond / 60).toString()  + ':' + (lengthInSecond%60).toString().padStart(2, "0") }}</div>
         </div>
       </div>
     </div>
