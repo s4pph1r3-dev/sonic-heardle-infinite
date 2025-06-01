@@ -12,4 +12,7 @@ export abstract class Player {
 
     abstract GetCurrentMusicTime(callback: (percentage: number)=>void): void;
     abstract GetCurrentMusicLength(callback: (length: number) => void): void;
+
+    abstract GetVolume(): number;
+    abstract SetVolume(volume: number): void;
 }
