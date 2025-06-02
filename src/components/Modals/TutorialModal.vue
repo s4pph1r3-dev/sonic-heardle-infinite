@@ -40,7 +40,7 @@ onMounted(()=>{
         <p>Answer in as few tries  as possible and share your score!</p>
       </div>
     </div>
-    <div class="button-container">
+    <div class="button-container font-medium">
       <button @click="$parent.$emit('close');">Play</button>
     </div>
   </div>
@@ -77,24 +77,15 @@ onMounted(()=>{
   letter-spacing: 0.2em;
   font-weight: 10;
 
-  font-size: 1.75rem;
-  line-height: 1.3rem;
-
   padding: 0.5rem;
 
-  background-color: var(--color-submit);
+  background: var(--color-submit);
 
   border-style: none;
 
   align-items: center;
   display: flex;
 
-  color: inherit;
-
   cursor: pointer;
-
-  background-image: none;
-
-  font-family: inherit;
 }
 </style>

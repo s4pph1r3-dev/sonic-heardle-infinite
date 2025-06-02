@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import IconFailedCross from "@/components/icons/IconFailedCross.vue";
 import settings from "@/settings/settings.json"
-import { SelectedMusic } from "@/main";
+import { SelectedMusic, ParseStringWithVariable } from "@/main";
 import IconEmptyBox from "@/components/icons/IconEmptyBox.vue";
 
 const props = defineProps<{
@@ -22,7 +22,7 @@ console.log("")
 
     <div class="name-parent" v-if="music != undefined">
       <div class="name font-medium" v-if="music.name != 'Skipped'"> {{ music.name }} </div>
-      <div class="skipped" v-else >SKIPPED </div>
+      <div class="skipped" v-else >  {{ ParseStringWithVariable(settings["phrases"]["skipped"]) }}  </div>
     </div>
 
     <div style="max-width: 60%;" v-if="music != undefined && music['equal-to'] != undefined">

@@ -7,7 +7,7 @@ import FuzzySearch from "fuzzy-search";
 import music from "@/settings/music.json"
 import settings from "@/settings/settings.json"
 
-import { currentGameState, SelectedMusic } from "@/main";
+import { currentGameState, SelectedMusic, ParseStringWithVariable } from "@/main";
 import {onMounted} from "vue";
 
 const searcher = new FuzzySearch(music, ["title", "game"], {
@@ -107,10 +107,10 @@ function Verify(){
         </div>
         <div class="button-container">
           <button class="skip" @click="OnSkip">
-            Skip <span class="tracking-normal lowercase" v-if="currentGameState.guess < settings['guess-number']-1">(+{{ settings["times"][currentGameState.guess+1] - settings["times"][currentGameState.guess] }}s)</span>
+            {{ ParseStringWithVariable(settings["phrases"]["skip-button"]) }} <span class="tracking-normal lowercase" v-if="currentGameState.guess < settings['guess-number']-1">(+{{ settings["times"][currentGameState.guess+1] - settings["times"][currentGameState.guess] }}s)</span>
           </button>
           <button class="submit" @click="OnSubmit">
-            Submit
+            {{ ParseStringWithVariable(settings["phrases"]["submit-button"]) }}
           </button>
         </div>
       </div>

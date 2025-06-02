@@ -7,7 +7,7 @@ import IconShare from "@/components/icons/IconShare.vue";
 
 import settings from "@/settings/settings.json"
 
-import { currentGameState } from "@/main";
+import { currentGameState, ParseStringWithVariable } from "@/main";
 import TransportBar from "@/components/TransportBar.vue";
 
 // calculate time
@@ -48,23 +48,32 @@ setInterval(()=>{
     <div class="summary-container">
       <p class="guess-number font-big"> {{ currentGameState.guessed[currentGameState.guessed.length-1].isCorrect ? currentGameState.guessed.length.toString() : '0' }} </p>
       <GuessSummary class="summary"/>
-      <p class="second-text" v-if="currentGameState.guessed[currentGameState.guessed.length-1].isCorrect"> You got today's {{ settings["heardle-name"] }} Heardle within {{ settings["times"][currentGameState.guessed.length-1] }} seconds. </p>
-      <p class="second-text" v-else> You didn't get today's {{ settings["heardle-name"] }} Heardle. Better luck tomorrow! 💎 </p>
+      <p class="second-text" v-if="currentGameState.guessed[currentGameState.guessed.length-1].isCorrect">
+        {{ ParseStringWithVariable((settings["infinite"] ? settings["phrases"]["infinite-win-text"] : settings["phrases"]["default-win-text"])) }}
+      </p>
+      <p class="second-text" v-else>
+        {{ ParseStringWithVariable((settings["infinite"] ? settings["phrases"]["infinite-lose-text"] : settings["phrases"]["default-lose-text"])) }}
+      </p>
       <div class="share">
         <button class="font-medium">
-          Share
+          {{ ParseStringWithVariable(settings["phrases"]["share-button"]) }}
           <IconShare class="inline-block ml-2"/>
         </button>
       </div>
     </div>
-    <div>
+    <div v-if="!settings['infinite']">
       <div class="timer-container">
-        <div class="next-text font-medium">The next {{ settings["heardle-name"] }} song starts in:</div>
+        <div class="next-text font-medium"> {{ ParseStringWithVariable(settings["phrases"]["timer-text"]) }} </div>
         <div id="timer" class="font-big">14:25:42</div>
       </div>
       <div class="infinite-button-container">
         <div class="margin"></div>
        <InfiniteButton/>
+      </div>
+    </div>
+    <div v-else>
+      <div class="next-button-container">
+        <button class="font-medium" onclick="window.location.reload()"> {{ ParseStringWithVariable(settings["phrases"]["next-button"]) }} </button>
       </div>
     </div>
   </div>
@@ -158,6 +167,33 @@ setInterval(()=>{
   #timer {
     text-indent: 0.25em;
     letter-spacing: 0.2em;
+  }
+}
+
+.next-button-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin: 3.5rem 0;
+
+  button {
+    text-transform: uppercase;
+
+    text-indent: 0.25em;
+    letter-spacing: 0.2em;
+    font-weight: 10;
+
+    padding: 0.5rem;
+
+    background: var(--color-submit);
+
+    border-style: none;
+
+    align-items: center;
+    display: flex;
+
+    cursor: pointer;
   }
 }
 </style>

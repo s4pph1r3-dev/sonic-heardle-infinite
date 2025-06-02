@@ -2,13 +2,15 @@
 
 import IconInfinite from "@/components/icons/IconInfinite.vue";
 import settings from "@/settings/settings.json"
+
+import {ParseStringWithVariable} from "@/main";
 </script>
 
 <template>
   <div v-if="settings['variant-link'] !== '' && settings['variant-link'] !== null && settings['variant-link'] !== undefined">
     <a :href="settings['variant-link']" title="Mario Heardle Infinite">
       <span>
-        <IconInfinite/> Click here to play <p></p> {{ settings["heardle-name"] }} Heardle Infinite!
+        <IconInfinite/> {{ ParseStringWithVariable(settings["phrases"]["infinite-pub-text"]) }}
       </span>
     </a>
   </div>

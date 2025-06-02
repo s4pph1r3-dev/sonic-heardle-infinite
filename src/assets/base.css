@@ -14,7 +14,8 @@ html {
   -o-tab-size: 4;
   tab-size: 4;
   line-height: 1.15;
-  -webkit-text-size-adjust: 100%
+  -webkit-text-size-adjust: 100%;
+  white-space: pre-line;
 }
 
 :root {

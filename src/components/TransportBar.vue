@@ -8,10 +8,11 @@ import settings from "@/settings/settings.json"
 import {SoundcloudPlayer} from "@/players/SoundcloudPlayer";
 
 import {currentGameState, SelectedMusic} from "@/main"
+import {Player} from "@/players/PlayerBase";
 
 const isPlaying = ref(false);
 
-let player: SoundcloudPlayer;
+let player: Player;
 
 let isFinished = ref(false);
 
@@ -68,6 +69,10 @@ let sepSelectInterval = setInterval(() => {
 
 onMounted(()=>{
   player = new SoundcloudPlayer(SelectedMusic.url);
+
+  //if(SelectedMusic.url.indexOf("soundcloud.com") !== -1)
+  //else if (SelectedMusic.url.indexOf("youtube.com") !== -1)
+  //  player = new YoutubePlayer(SelectedMusic.url);
 
   isFinished.value = currentGameState.value.isFinished;
 

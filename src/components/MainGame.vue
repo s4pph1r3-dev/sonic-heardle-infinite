@@ -6,7 +6,7 @@ import TransportBar from "@/components/TransportBar.vue";
 import GuessField from "@/components/GuessField.vue";
 import settings from "@/settings/settings.json";
 
-import { currentGameState } from "@/main";
+import { currentGameState, ParseStringWithVariable } from "@/main";
 
 </script>
 
@@ -24,7 +24,7 @@ import { currentGameState } from "@/main";
   <div class="list-text font-medium" v-if="settings['song-list-link'] !== '' && settings['song-list-link'] !== null && settings['song-list-link'] !== undefined" >
     <p>
       <a :href="settings['song-list-link']">
-        Click Here for the full list of {{ settings["heardle-name"] }} Heardle songs. <br/>
+        {{ ParseStringWithVariable(settings["phrases"]["song-list"])  }} <br/>
         <IconArrowDown class="arrow"/>
       </a>
     </p>

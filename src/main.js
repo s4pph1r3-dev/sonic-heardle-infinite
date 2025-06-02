@@ -10,6 +10,37 @@ import music from '@/settings/music.json'
 
 // Choose music
 
+export function ParseStringWithVariable(string) {
+    let nString = "";
+    for (let i = 0; i < string.length; i++) {
+        if(string[i] === '{'){
+            let testStr = string.slice(i, string.length);
+
+            let key = "";
+            key = string.slice(i, i+testStr.indexOf("}")).replace("{", "").replace("}", "");
+
+            switch(key) {
+                case "heardle-name":
+                    nString += settings["heardle-name"];
+                    break;
+                case "unlocked-time":
+                    nString += settings["times"][currentGameState.value.guessed.length-1];
+                    break;
+                default:
+                    nString += key;
+                    break;
+            }
+
+            i += testStr.indexOf("}");
+        }
+        else {
+            nString += string[i];
+        }
+    }
+
+    return nString;
+}
+
 export const _currentGameState = ref({
     guess: 0,
     guessed: [],
