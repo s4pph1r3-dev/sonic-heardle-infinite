@@ -335,14 +335,14 @@ function mute(){
       padding: 0;
       margin: 0;
 
-      &::-moz-range-thumb {
+      &::-moz-range-thumb, &::-webkit-slider-thumb, &::-ms-thumb {
         padding: 0;
         margin: 0;
 
         background-color: var(--color-fg);
       }
 
-      &::-moz-range-progress{
+      &::-moz-range-progress, &::-webkit-slider-thumb, &::-ms-fill{
         background-color: var(--color-fg);
         padding: 0;
         margin: 0;
