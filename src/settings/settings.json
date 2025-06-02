@@ -13,9 +13,9 @@
       "display-name": "Year",
       "type": "plus-minus",
       "word": {
-        "+": "Older",
-        "-": "Newer",
-        "=": "correct"
+        "+": "Older than {guess}",
+        "-": "Newer than {guess}",
+        "=": "{guess} is correct"
       }
     },
     {
@@ -23,8 +23,8 @@
       "display-name": "Console",
       "type": "equal",
       "word": {
-        "=": "correct",
-        "!=": "incorrect"
+        "=": "{guess} is correct",
+        "!=": "{guess} is incorrect"
       }
     },
     {
@@ -32,8 +32,8 @@
       "display-name": "Series",
       "type": "equal",
       "word": {
-        "=": "correct",
-        "!=": "incorrect"
+        "=": "{guess} is correct",
+        "!=": "{guess} is incorrect"
       }
     },
     {
@@ -41,8 +41,8 @@
       "display-name": "Game",
       "type": "equal",
       "word": {
-        "=": "correct",
-        "!=": "incorrect"
+        "=": "{guess} is correct",
+        "!=": "{guess} is incorrect"
       }
     },
     {
@@ -50,8 +50,8 @@
       "display-name": "Genre",
       "type": "equal",
       "word": {
-        "=": "correct",
-        "!=": "incorrect"
+        "=": "{guess} is correct",
+        "!=": "{guess} is incorrect"
       }
     }
   ],

@@ -31,15 +31,15 @@ console.log("")
           {{ tag["display-name"] }}:
 
           <span v-if="tag.type == 'equal'">
-              {{ music['equal-to'].tags[tag.name] }} is {{ (music['equal-to'].tags[tag.name] === SelectedMusic.tags[tag.name]) ? tag.word['='] : tag.word['!='] }}
+              {{ ((music['equal-to'].tags[tag.name] === SelectedMusic.tags[tag.name]) ? tag.word['='] : tag.word['!=']).replace("{guess}", music['equal-to'].tags[tag.name]) }}
             </span>
 
           <span v-if="tag.type == 'plus-minus' && (music['equal-to'].tags[tag.name] === SelectedMusic.tags[tag.name]) ">
-              {{ music['equal-to'].tags[tag.name] }} is {{ tag.word['='] }}
+              {{ tag.word['='].replace("{guess}", music['equal-to'].tags[tag.name]) }}
             </span>
 
           <span v-else-if="tag.type == 'plus-minus' && (music['equal-to'].tags[tag.name] !== SelectedMusic.tags[tag.name])">
-              {{ (music['equal-to'].tags[tag.name] > SelectedMusic.tags[tag.name]) ? tag.word['+'] : tag.word['-'] }} than {{ music['equal-to'].tags[tag.name] }}
+              {{ ((music['equal-to'].tags[tag.name] > SelectedMusic.tags[tag.name]) ? tag.word['+'] : tag.word['-']).replace("{guess}", music['equal-to'].tags[tag.name]) }} }}
             </span>
         </div>
       </div>
