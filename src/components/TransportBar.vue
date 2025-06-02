@@ -332,23 +332,27 @@ function mute(){
       border: none;
       width: 100px;
 
+      accent-color: var(--color-fg);
+
       padding: 0;
       margin: 0;
 
-      &::-moz-range-thumb, &::-webkit-slider-thumb, &::-ms-thumb {
+      &::-moz-range-thumb, &::-webkit-slider-thumb/*, &::-ms-thumb*/ {
         padding: 0;
         margin: 0;
 
         background-color: var(--color-fg);
       }
 
-      &::-moz-range-progress, &::-webkit-slider-thumb, &::-ms-fill{
+      &::-moz-range-progress/*, &::-ms-fill*/{
         background-color: var(--color-fg);
         padding: 0;
         margin: 0;
 
         height: 100%;
       }
+
+
     }
   }
 }
