@@ -13,10 +13,6 @@ const currentModal = shallowRef(null);
 // Setting Manager
 import themes from '@/settings/themes.json'
 import settings from "@/settings/settings.json"
-import GuessField from "@/components/GuessField.vue";
-import TransportBar from "@/components/TransportBar.vue";
-import IconArrowDown from "@/components/icons/IconArrowDown.vue";
-import GuessBar from "@/components/GuessBar.vue";
 import MainGame from "@/components/MainGame.vue";
 
 import { currentGameState } from "@/main";

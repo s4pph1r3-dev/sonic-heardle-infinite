@@ -16,11 +16,12 @@ export const _currentGameState = ref({
     isFinished: false,
 });
 
-let listIndex;
+let listIndex = 0;
 let id = 0;
 
 if(settings["infinite"]){
-    listIndex = Math.random() * (music.length-1);
+    listIndex = Math.round(Math.random() * (music.length-1));
+
 } else {
     const oldestDate = new Date(null);
     const currentDate = new Date();
