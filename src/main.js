@@ -41,6 +41,25 @@ export function ParseStringWithVariable(string) {
     return nString;
 }
 
+function shuffle(array, seed) {                // <-- ADDED ARGUMENT
+  var m = array.length, t, i;
+
+  // While there remain elements to shuffle…
+  while (m) {
+
+    // Pick a remaining element…
+    i = Math.floor(random(seed) * m--);        // <-- MODIFIED LINE
+
+    // And swap it with the current element.
+    t = array[m];
+    array[m] = array[i];
+    array[i] = t;
+    ++seed                                     // <-- ADDED LINE
+  }
+
+  return array;
+}
+
 export const _currentGameState = ref({
     guess: 0,
     guessed: [],
@@ -49,6 +68,8 @@ export const _currentGameState = ref({
 
 let listIndex = 0;
 let id = 0;
+
+const shuffledMusic = music;
 
 if(settings["infinite"]){
     listIndex = Math.round(Math.random() * (music.length-1));
@@ -74,9 +95,11 @@ if(settings["infinite"]){
             _currentGameState.value.isFinished = item.isFinished;
         }
     }
+
+    shuffle(shuffledMusic, Math.floor(id / music.length))
 }
 
-export const SelectedMusic = music[listIndex];
+export const SelectedMusic = shuffledMusic[listIndex];
 
 function save(){
     if(!settings["infinite"]){
