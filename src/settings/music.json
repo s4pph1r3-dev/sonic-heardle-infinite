@@ -1,110 +1,211 @@
 [
   {
-    "title": "Fantasy Meadows",
-    "media": "Kirby Air Ride",
-    "url": "https://soundcloud.com/vgmmusic/air-ride-fantasy-meadows?in=xweetok/sets/kirby-air-ride",
+    "title": "Title Screen",
+    "media": "Sonic the Hedgehog (16-Bit)",
+    "url": "https://soundcloud.com/nathan-202274230/title",
     "tags": {
-      "year": 2003,
-      "console": "GameCube",
-      "series": "Kirby Spin-offs",
-      "game": "Kirby Air Ride",
-      "game-genre": "Racing"
+      "year": 1991,
+      "console": "Sega Genesis",
+      "series": "Sonic the Hedgehog",
+      "game": "Sonic the Hedgehog (16-Bit)",
+      "game-genre": "2D Platformer",
+      "green-hills": true
     }
   },
   {
-    "title": "Celestial Valley",
-    "media": "Kirby Air Ride",
-    "url": "https://soundcloud.com/vgmmusic/air-ride-celestial-valley?in=xweetok/sets/kirby-air-ride",
+    "title": "Green Hills Zone",
+    "media": "Sonic the Hedgehog (16-Bit)",
+    "url": "https://soundcloud.com/nathan-202274230/green-hill-zone-2",
     "tags": {
-      "year": 2003,
-      "console": "GameCube",
-      "series": "Kirby Spin-offs",
-      "game": "Kirby Air Ride",
-      "game-genre": "Racing"
+      "year": 1991,
+      "console": "Sega Genesis",
+      "series": "Sonic the Hedgehog",
+      "game": "Sonic the Hedgehog (16-Bit)",
+      "game-genre": "2D Platformer",
+      "green-hills": false
     }
   },
   {
-    "title": "Sky Sands",
-    "media": "Kirby Air Ride",
-    "url": "https://soundcloud.com/vgmmusic/air-ride-fantasy-meadows?in=xweetok/sets/kirby-air-ride",
+    "title": "Marble Zone",
+    "media": "Sonic the Hedgehog (16-Bit)",
+    "url": "https://soundcloud.com/nathan-202274230/marble-zone",
     "tags": {
-      "year": 2003,
-      "console": "GameCube",
-      "series": "Kirby Spin-offs",
-      "game": "Kirby Air Ride",
-      "game-genre": "Racing"
+      "year": 1991,
+      "console": "Sega Genesis",
+      "series": "Sonic the Hedgehog",
+      "game": "Sonic the Hedgehog (16-Bit)",
+      "game-genre": "2D Platformer",
+      "green-hills": false
     }
   },
   {
-    "title": "Frozen Hillside",
-    "media": "Kirby Air Ride",
-    "url": "https://soundcloud.com/vgmmusic/air-ride-celestial-valley?in=xweetok/sets/kirby-air-ride",
+    "title": "Spring Yars Zone",
+    "media": "Sonic the Hedgehog (16-Bit)",
+    "url": "https://soundcloud.com/nathan-202274230/spring-yard-zone-2",
     "tags": {
-      "year": 2003,
-      "console": "GameCube",
-      "series": "Kirby Spin-offs",
-      "game": "Kirby Air Ride",
-      "game-genre": "Racing"
+      "year": 1991,
+      "console": "Sega Genesis",
+      "series": "Sonic the Hedgehog",
+      "game": "Sonic the Hedgehog (16-Bit)",
+      "game-genre": "2D Platformer",
+      "green-hills": false
     }
   },
   {
-    "title": "Magma Flows",
-    "media": "Kirby Air Ride",
-    "url": "https://soundcloud.com/vgmmusic/air-ride-magma-flows?in=xweetok/sets/kirby-air-ride",
+    "title": "Labyrinth Zone",
+    "media": "Sonic the Hedgehog (16-Bit)",
+    "url": "https://soundcloud.com/nathan-202274230/labyrinth-zone-1",
     "tags": {
-      "year": 2003,
-      "console": "GameCube",
-      "series": "Kirby Spin-offs",
-      "game": "Kirby Air Ride",
-      "game-genre": "Racing"
+      "year": 1991,
+      "console": "Sega Genesis",
+      "series": "Sonic the Hedgehog",
+      "game": "Sonic the Hedgehog (16-Bit)",
+      "game-genre": "2D Platformer",
+      "green-hills": false
     }
   },
   {
-    "title": "Beanstalk Park",
-    "media": "Kirby Air Ride",
-    "url": "https://soundcloud.com/vgmmusic/air-ride-beanstalk-park?in=xweetok/sets/kirby-air-ride",
+    "title": "Star Light Zone",
+    "media": "Sonic the Hedgehog (16-Bit)",
+    "url": "https://soundcloud.com/nathan-202274230/starlight-zone-1",
     "tags": {
-      "year": 2003,
-      "console": "GameCube",
-      "series": "Kirby Spin-offs",
-      "game": "Kirby Air Ride",
-      "game-genre": "Racing"
+      "year": 1991,
+      "console": "Sega Genesis",
+      "series": "Sonic the Hedgehog",
+      "game": "Sonic the Hedgehog (16-Bit)",
+      "game-genre": "2D Platformer",
+      "green-hills": false
     }
   },
   {
-    "title": "Machine Passage",
-    "media": "Kirby Air Ride",
-    "url": "https://soundcloud.com/vgmmusic/air-ride-machine-passage?in=xweetok/sets/kirby-air-ride",
+    "title": "Scrap Brain Zone",
+    "media": "Sonic the Hedgehog (16-Bit)",
+    "url": "https://soundcloud.com/nathan-202274230/scrap-brain-zone-1",
     "tags": {
-      "year": 2003,
-      "console": "GameCube",
-      "series": "Kirby Spin-offs",
-      "game": "Kirby Air Ride",
-      "game-genre": "Racing"
+      "year": 1991,
+      "console": "Sega Genesis",
+      "series": "Sonic the Hedgehog",
+      "game": "Sonic the Hedgehog (16-Bit)",
+      "game-genre": "2D Platformer",
+      "green-hills": false
     }
   },
   {
-    "title": "Checker Knights",
-    "media": "Kirby Air Ride",
-    "url": "https://soundcloud.com/vgmmusic/air-ride-checker-knights?in=xweetok/sets/kirby-air-ride",
+    "title": "Final Zone",
+    "media": "Sonic the Hedgehog (16-Bit)",
+    "url": "https://soundcloud.com/nathan-202274230/final-zone-1",
     "tags": {
-      "year": 2003,
-      "console": "GameCube",
-      "series": "Kirby Spin-offs",
-      "game": "Kirby Air Ride",
-      "game-genre": "Racing"
+      "year": 1991,
+      "console": "Sega Genesis",
+      "series": "Sonic the Hedgehog",
+      "game": "Sonic the Hedgehog (16-Bit)",
+      "game-genre": "2D Platformer",
+      "green-hills": false
     }
   },
   {
-    "title": "Nebula Belt",
-    "media": "Kirby Air Ride",
-    "url": "https://soundcloud.com/vgmmusic/air-ride-nebula-belt?in=xweetok/sets/kirby-air-ride",
+    "title": "Special Stage",
+    "media": "Sonic the Hedgehog (16-Bit)",
+    "url": "https://soundcloud.com/nathan-202274230/special-stage-1",
     "tags": {
-      "year": 2003,
-      "console": "GameCube",
-      "series": "Kirby Spin-offs",
-      "game": "Kirby Air Ride",
-      "game-genre": "Racing"
+      "year": 1991,
+      "console": "Sega Genesis",
+      "series": "Sonic the Hedgehog",
+      "game": "Sonic the Hedgehog (16-Bit)",
+      "game-genre": "2D Platformer",
+      "green-hills": false
+    }
+  },
+  {
+    "title": "Boss Battle",
+    "media": "Sonic the Hedgehog (16-Bit)",
+    "url": "https://soundcloud.com/nathan-202274230/boss-1",
+    "tags": {
+      "year": 1991,
+      "console": "Sega Genesis",
+      "series": "Sonic the Hedgehog",
+      "game": "Sonic the Hedgehog (16-Bit)",
+      "game-genre": "2D Platformer",
+      "green-hills": false
+    }
+  },
+  {
+    "title": "Invincibility",
+    "media": "Sonic the Hedgehog (16-Bit)",
+    "url": "https://soundcloud.com/nathan-202274230/invincibility-1",
+    "tags": {
+      "year": 1991,
+      "console": "Sega Genesis",
+      "series": "Sonic the Hedgehog",
+      "game": "Sonic the Hedgehog (16-Bit)",
+      "game-genre": "2D Platformer",
+      "green-hills": false
+    }
+  },
+  {
+    "title": "All Clear",
+    "media": "Sonic the Hedgehog (16-Bit)",
+    "url": "https://soundcloud.com/nathan-202274230/all-clear",
+    "tags": {
+      "year": 1991,
+      "console": "Sega Genesis",
+      "series": "Sonic the Hedgehog",
+      "game": "Sonic the Hedgehog (16-Bit)",
+      "game-genre": "2D Platformer",
+      "green-hills": false
+    }
+  },
+  {
+    "title": "Continue",
+    "media": "Sonic the Hedgehog (16-Bit)",
+    "url": "https://soundcloud.com/nathan-202274230/continue",
+    "tags": {
+      "year": 1991,
+      "console": "Sega Genesis",
+      "series": "Sonic the Hedgehog",
+      "game": "Sonic the Hedgehog (16-Bit)",
+      "game-genre": "2D Platformer",
+      "green-hills": false
+    }
+  },
+  {
+    "title": "Game Over",
+    "media": "Sonic the Hedgehog (16-Bit)",
+    "url": "https://soundcloud.com/nathan-202274230/game-over",
+    "tags": {
+      "year": 1991,
+      "console": "Sega Genesis",
+      "series": "Sonic the Hedgehog",
+      "game": "Sonic the Hedgehog (16-Bit)",
+      "game-genre": "2D Platformer",
+      "green-hills": false
+    }
+  },
+  {
+    "title": "Drowning",
+    "media": "Sonic the Hedgehog (16-Bit)",
+    "url": "https://soundcloud.com/nathan-202274230/drowning",
+    "tags": {
+      "year": 1991,
+      "console": "Sega Genesis",
+      "series": "Sonic the Hedgehog",
+      "game": "Sonic the Hedgehog (16-Bit)",
+      "game-genre": "2D Platformer",
+      "green-hills": false
+    }
+  },
+  {
+    "title": "Credits",
+    "media": "Sonic the Hedgehog (16-Bit)",
+    "url": "https://soundcloud.com/nathan-202274230/credits-2",
+    "tags": {
+      "year": 1991,
+      "console": "Sega Genesis",
+      "series": "Sonic the Hedgehog",
+      "game": "Sonic the Hedgehog (16-Bit)",
+      "game-genre": "2D Platformer",
+      "green-hills": false
     }
   }
 ]
+
