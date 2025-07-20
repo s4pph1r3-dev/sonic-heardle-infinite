@@ -35,7 +35,7 @@ console.log("")
             </span>
 
           <span v-if="tag.type == 'tag-value'">
-              {{ tag.word['*'].replace("{guess}", music['equal-to'].tags[tag.name]).replace("{value}", SelectedMusic.tags[tag.name]) }}
+              {{ tag.word['*'].replace("{guess}", music['equal-to'].tags[tag.name]).replace("{value}", tag.word[SelectedMusic.tags[tag.name].toString()]) }}
             </span>
 
           <span v-if="tag.type == 'plus-minus' && (music['equal-to'].tags[tag.name] === SelectedMusic.tags[tag.name]) ">
