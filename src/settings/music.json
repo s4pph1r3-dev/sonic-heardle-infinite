@@ -9,7 +9,7 @@
       "series": "Sonic the Hedgehog",
       "game": "Sonic the Hedgehog (16-Bit)",
       "game-genre": "2D Platformer",
-      "green-hills": true
+      "green-hills": false
     }
   },
   {
@@ -22,7 +22,7 @@
       "series": "Sonic the Hedgehog",
       "game": "Sonic the Hedgehog (16-Bit)",
       "game-genre": "2D Platformer",
-      "green-hills": false
+      "green-hills": true
     }
   },
   {
@@ -208,4 +208,3 @@
     }
   }
 ]
-

@@ -1,5 +1,5 @@
 {
-  "heardle-name": "Kirby Air Ride",
+  "heardle-name": "Sonic",
   "guess-number": 6,
   "times": [
     1, 2, 4, 8, 16, 32
@@ -59,7 +59,9 @@
       "display-name": "Green Hills",
       "type": "tag-value",
       "word": {
-        "*": "Is the music you have to guess Green Hill? {value}"
+        "*": "Is the music you have to guess Green Hill? {value}",
+        "true": "Yes",
+        "false": "No"
       }
     }
   ],
