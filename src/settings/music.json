@@ -220,5 +220,189 @@
       "game-genre": "2D Platformer",
       "green-hills": false
     }
+  },
+
+
+  {
+    "title": "",
+    "media": "Sonic the Hedgehog (8-Bit)",
+    "url": "",
+    "tags": {
+      "year": 1991,
+      "console": "Sega Master System",
+      "series": "Sonic the Hedgehog",
+      "game": "Sonic the Hedgehog (8-Bit)",
+      "game-genre": "2D Platformer",
+      "green-hills": false
+    }
+  },
+  {
+    "title": "Title Screen",
+    "media": "Sonic the Hedgehog (8-Bit)",
+    "url": "https://soundcloud.com/faded_boo/intro-14?in=faded_boo/sets/sonic-the-hedgehog-game-gear-master-system",
+    "tags": {
+      "year": 1991,
+      "console": "Sega Master System",
+      "series": "",
+      "game": "Sonic the Hedgehog (8-Bit)",
+      "game-genre": "2D Platformer",
+      "green-hills": false
+    }
+  },
+  {
+    "title": "Green Hills Zone",
+    "media": "Sonic the Hedgehog (8-Bit)",
+    "url": "https://soundcloud.com/faded_boo/green-hill-zone-2?in=faded_boo/sets/sonic-the-hedgehog-game-gear-master-system",
+    "tags": {
+      "year": 1991,
+      "console": "Sega Master System",
+      "series": "Sonic the Hedgehog",
+      "game": "Sonic the Hedgehog (8-Bit)",
+      "game-genre": "2D Platformer",
+      "green-hills": true
+    }
+  },
+  {
+    "title": "Bridge Zone",
+    "media": "Sonic the Hedgehog (8-Bit)",
+    "url": "https://soundcloud.com/faded_boo/bridge-zone?in=faded_boo/sets/sonic-the-hedgehog-game-gear-master-system",
+    "tags": {
+      "year": 1991,
+      "console": "Sega Master System",
+      "series": "Sonic the Hedgehog",
+      "game": "Sonic the Hedgehog (8-Bit)",
+      "game-genre": "2D Platformer",
+      "green-hills": false
+    }
+  },
+  {
+    "title": "Jungle Zone",
+    "media": "Sonic the Hedgehog (8-Bit)",
+    "url": "https://soundcloud.com/faded_boo/jungle-zone?in=faded_boo/sets/sonic-the-hedgehog-game-gear-master-system&si=a4664a97577e4936a1c8a842714fbc8a&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing",
+    "tags": {
+      "year": 1991,
+      "console": "Sega Master System",
+      "series": "Sonic the Hedgehog",
+      "game": "Sonic the Hedgehog (8-Bit)",
+      "game-genre": "2D Platformer",
+      "green-hills": false
+    }
+  },
+  {
+    "title": "Labyrinth Zone",
+    "media": "Sonic the Hedgehog (8-Bit)",
+    "url": "https://soundcloud.com/faded_boo/labyrinth-zone-1?in=faded_boo/sets/sonic-the-hedgehog-game-gear-master-system&si=edb778b842754e3eac990095f82adb47&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing",
+    "tags": {
+      "year": 1991,
+      "console": "Sega Master System",
+      "series": "Sonic the Hedgehog",
+      "game": "Sonic the Hedgehog (8-Bit)",
+      "game-genre": "2D Platformer",
+      "green-hills": false
+    }
+  },
+  {
+    "title": "Scrap Brain Zone",
+    "media": "Sonic the Hedgehog (8-Bit)",
+    "url": "https://soundcloud.com/faded_boo/scrap-brain-zone-1?in=faded_boo/sets/sonic-the-hedgehog-game-gear-master-system",
+    "tags": {
+      "year": 1991,
+      "console": "Sega Master System",
+      "series": "Sonic the Hedgehog",
+      "game": "Sonic the Hedgehog (8-Bit)",
+      "game-genre": "2D Platformer",
+      "green-hills": false
+    }
+  },
+  {
+    "title": "Sky Base Zone",
+    "media": "Sonic the Hedgehog (8-Bit)",
+    "url": "https://soundcloud.com/faded_boo/sky-base?in=faded_boo/sets/sonic-the-hedgehog-game-gear-master-system&si=0345aa2980b843ff9697cc4779cce9fe&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing",
+    "tags": {
+      "year": 1991,
+      "console": "Sega Master System",
+      "series": "Sonic the Hedgehog",
+      "game": "Sonic the Hedgehog (8-Bit)",
+      "game-genre": "2D Platformer",
+      "green-hills": false
+    }
+  },
+  {
+    "title": "Boss",
+    "media": "Sonic the Hedgehog (8-Bit)",
+    "url": "https://soundcloud.com/faded_boo/boss-theme-3?in=faded_boo/sets/sonic-the-hedgehog-game-gear-master-system&si=b84d00784d014d7c8cc1137070821494&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing",
+    "tags": {
+      "year": 1991,
+      "console": "Sega Master System",
+      "series": "Sonic the Hedgehog",
+      "game": "Sonic the Hedgehog (8-Bit)",
+      "game-genre": "2D Platformer",
+      "green-hills": false
+    }
+  },
+  {
+    "title": "Credits",
+    "media": "Sonic the Hedgehog (8-Bit)",
+    "url": "https://soundcloud.com/faded_boo/ending-10?in=faded_boo/sets/sonic-the-hedgehog-game-gear-master-system&si=427bb2308ac24949b4ecc3433a59f9a8&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing",
+    "tags": {
+      "year": 1991,
+      "console": "Sega Master System",
+      "series": "Sonic the Hedgehog",
+      "game": "Sonic the Hedgehog (8-Bit)",
+      "game-genre": "2D Platformer",
+      "green-hills": false
+    }
+  },
+  {
+    "title": "Bonus Stage",
+    "media": "Sonic the Hedgehog (8-Bit)",
+    "url": "https://soundcloud.com/faded_boo/special-stage-20?in=faded_boo/sets/sonic-the-hedgehog-game-gear-master-system&si=63f59358e14745879648c25e28ff92fb&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing",
+    "tags": {
+      "year": 1991,
+      "console": "Sega Master System",
+      "series": "Sonic the Hedgehog",
+      "game": "Sonic the Hedgehog (8-Bit)",
+      "game-genre": "2D Platformer",
+      "green-hills": false
+    }
+  },
+  {
+    "title": "Invincibility",
+    "media": "Sonic the Hedgehog (8-Bit)",
+    "url": "https://soundcloud.com/faded_boo/invincible?in=faded_boo/sets/sonic-the-hedgehog-game-gear-master-system&si=8e0aa07646294a24a8f5d8480872cf62&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing",
+    "tags": {
+      "year": 1991,
+      "console": "Sega Master System",
+      "series": "Sonic the Hedgehog",
+      "game": "Sonic the Hedgehog (8-Bit)",
+      "game-genre": "2D Platformer",
+      "green-hills": false
+    }
+  },
+  {
+    "title": "Act Passed",
+    "media": "Sonic the Hedgehog (8-Bit)",
+    "url": "https://soundcloud.com/faded_boo/act-complete?in=faded_boo/sets/sonic-the-hedgehog-game-gear-master-system&si=ce8e59965b7845fb840708d49c06ad01&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing",
+    "tags": {
+      "year": 1991,
+      "console": "Sega Master System",
+      "series": "Sonic the Hedgehog",
+      "game": "Sonic the Hedgehog (8-Bit)",
+      "game-genre": "2D Platformer",
+      "green-hills": false
+    }
+  },
+  {
+    "title": "Marble Zone (Unused)",
+    "media": "Sonic the Hedgehog (8-Bit)",
+    "url": "https://soundcloud.com/faded_boo/marble-unused?in=faded_boo/sets/sonic-the-hedgehog-game-gear-master-system&si=af8ba4c7b9e04fb49f8e2a1b5f17a682&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing",
+    "tags": {
+      "year": 1991,
+      "console": "Sega Master System",
+      "series": "Sonic the Hedgehog",
+      "game": "Sonic the Hedgehog (8-Bit)",
+      "game-genre": "2D Platformer",
+      "green-hills": false
+    }
   }
 ]
