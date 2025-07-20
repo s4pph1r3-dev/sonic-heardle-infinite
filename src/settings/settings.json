@@ -53,6 +53,14 @@
         "=": "{guess} is correct",
         "!=": "{guess} is incorrect"
       }
+    },
+    {
+      "name": "green-hills",
+      "display-name": "Green Hills",
+      "type": "tag-value",
+      "word": {
+        "*": "Is the music you have to guess Green Hill? {value}"
+      }
     }
   ],
   "infinite": false,
