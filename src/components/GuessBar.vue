@@ -10,7 +10,7 @@ import settings from "@/settings/settings.json"
 import { currentGameState, SelectedMusic, ParseStringWithVariable } from "@/main";
 import {onMounted} from "vue";
 
-const searcher = new FuzzySearch(music, ["title", "game"], {
+const searcher = new FuzzySearch(music, ["title", "media"], {
   sort: true
 });
 
