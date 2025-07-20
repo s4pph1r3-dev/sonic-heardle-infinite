@@ -17,7 +17,8 @@ const searcher = new FuzzySearch(music, ["title", "media"], {
 onMounted(() => {
   document.getElementById("main").onclick = () => {
     const autoCompleteList = document.getElementById('autoComplete_list')
-    autoCompleteList.setAttribute("hidden", "");
+    if(autoCompleteList != null)
+      autoCompleteList.setAttribute("hidden", "");
   }
 })
 

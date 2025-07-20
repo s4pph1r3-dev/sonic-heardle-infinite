@@ -70,7 +70,7 @@
     "default-win-text": "You got today's {heardle-name} Heardle within {unlocked-time} seconds.",
 
     "infinite-lose-text": "You didn't get the {heardle-name} song. Too bad, you can always try again!",
-    "default-lost-text": "You didn't get today's {heardle-name} Heardle. Better luck tomorrow! \uD83D\uDC8E",
+    "default-lose-text": "You didn't get today's {heardle-name} Heardle. Better luck tomorrow! \uD83D\uDC8E",
 
     "timer-text": "The next {heardle-name} song starts in:"
   },
