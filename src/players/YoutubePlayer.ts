@@ -24,7 +24,7 @@ export class YoutubeMusicPlayer extends Player {
 
         window.setInterval(()=>{
             this.p.getPlayerState().then((state)=>{
-                this.Playing = !(state == 2);
+                this.Playing = (state == 1);
             });
         }, 100);
 
@@ -56,9 +56,7 @@ export class YoutubeMusicPlayer extends Player {
 
         this.p.seekTo(0, true);
         let onPlay = (event)=>{
-            console.log("Current state is %d", event.data);
             if(event.data == PlayerStates.PLAYING){
-                console.log("pziojhgozjghoiejrnh");
                 if(started_callback != null) started_callback();
                 window.setTimeout(()=>{
                     this.p.getPlayerState().then((state)=>{
@@ -90,14 +88,15 @@ export class YoutubeMusicPlayer extends Player {
         if(!this.Playing) callback(0);
 
         this.p.getCurrentTime().then((n)=>{
-            callback(n);
+            callback(n*1000);
         })
     }
 
     override async GetCurrentMusicLength(callback: (length: number)=>void)
     {
         this.p.getDuration().then((n)=>{
-            callback(n);
+            console.log("Length is : %d", n)
+            callback(n*1000);
         })
     }
 
