@@ -222,20 +222,6 @@
     }
   },
 
-
-  {
-    "title": "",
-    "media": "Sonic the Hedgehog (8-Bit)",
-    "url": "",
-    "tags": {
-      "year": 1991,
-      "console": "Sega Master System",
-      "series": "Sonic the Hedgehog",
-      "game": "Sonic the Hedgehog (8-Bit)",
-      "game-genre": "2D Platformer",
-      "green-hills": false
-    }
-  },
   {
     "title": "Title Screen",
     "media": "Sonic the Hedgehog (8-Bit)",
@@ -404,5 +390,72 @@
       "game-genre": "2D Platformer",
       "green-hills": false
     }
-  }
+  },
+
+  {
+    "title": "Puzzle Mode",
+    "media": "Sonic Eraser",
+    "url": "https://soundcloud.com/faded_boo/puzzle-mode?in=faded_boo/sets/sonic-eraser&si=3d98761f684d42e5848f9973465eb66e&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing",
+    "tags": {
+      "year": 1991,
+      "console": "Sega Genesis",
+      "series": "Other Spin-Offs",
+      "game": "Sonic Eraser",
+      "game-genre": "Puzzle",
+      "green-hills": false
+    }
+  },
+  {
+    "title": "Versus Mode",
+    "media": "Sonic Eraser",
+    "url": "https://soundcloud.com/faded_boo/versus-mode?in=faded_boo/sets/sonic-eraser&si=0a727a11a57547878beedf120683c23e&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing",
+    "tags": {
+      "year": 1991,
+      "console": "Sega Genesis",
+      "series":"Other Spin-Offs",
+      "game":"Sonic Eraser",
+      "game-genre": "Puzzle",
+      "green-hills": false
+    }
+  },
+  {
+    "title": "You Win!",
+    "media": "Sonic Eraser",
+    "url": "https://soundcloud.com/faded_boo/you-win?in=faded_boo/sets/sonic-eraser&si=b49bf892b9024ff08933cf8e58c59ab1&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing",
+    "tags": {
+      "year": 1991,
+      "console": "Sega Genesis",
+      "series":"Other Spin-Offs",
+      "game":"Sonic Eraser",
+      "game-genre": "Puzzle",
+      "green-hills": false
+    }
+  },
+
+  {
+    "title": "Title",
+    "media": "Waku Waku Sonic Patrol Car",
+    "url": "https://soundcloud.com/faded_boo/title-1?in=faded_boo/sets/waku-waku-sonic-patrol-car&si=1201d672a74b4f0d986cb798910ad8f6&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing",
+    "tags": {
+      "year": 1991,
+      "console": "Arcade",
+      "series": "Arcade Spin-Offs",
+      "game": "Waku Waku Sonic Patrol Car",
+      "game-genre": "Riding Game",
+      "green-hills": true
+    }
+  },
+  {
+    "title": "Main BGM",
+    "media": "Waku Waku Sonic Patrol Car",
+    "url": "https://soundcloud.com/faded_boo/main-bgm?in=faded_boo/sets/waku-waku-sonic-patrol-car&si=30616ae7f4ab4e668a32a5858654271e&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing",
+    "tags": {
+      "year": 1991,
+      "console": "Arcade",
+      "series": "Arcade Spin-Offs",
+      "game": "Waku Waku Sonic Patrol Car",
+      "game-genre": "Riding Game",
+      "green-hills": true
+    }
+  },
 ]
