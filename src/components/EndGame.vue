@@ -61,11 +61,11 @@ setInterval(()=>{
         </button>
       </div>
     </div>
-    <div v-if="!settings['infinite']">
-      <div class="timer-container">
+    <div class="timer-container">
         <div class="next-text font-medium"> {{ ParseStringWithVariable(settings["phrases"]["timer-text"]) }} </div>
         <div id="timer" class="font-big">14:25:42</div>
       </div>
+    <div v-if="!settings['infinite']">
       <div class="infinite-button-container">
         <div class="margin"></div>
        <InfiniteButton/>
