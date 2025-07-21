@@ -87,5 +87,5 @@
 
   "!COMMENT!": "Variant link is  \"infinite\" when infinite is false, or \"base game\" when infinite is true",
   "variant-link": "https://s4pph1r3-dev.github.io/sonic-heardle/",
-  "song-list-link": "https://raw.githubusercontent.com/s4pph1r3-dev/Heardle-Base/refs/heads/main/src/settings/music.json"
+  "song-list-link": "https://raw.githubusercontent.com/s4pph1r3-dev/sonic-heardle/refs/heads/main/src/settings/music.json"
 }
