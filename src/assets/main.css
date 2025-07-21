@@ -149,3 +149,8 @@ textarea {
 input:disabled {
     color: #cccccc;
 }
+
+#video-player {
+    display: hidden;
+    opacity: 0%;
+}
