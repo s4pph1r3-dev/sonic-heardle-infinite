@@ -6,6 +6,7 @@ import IconPlaying from "@/components/icons/IconPlaying.vue";
 
 import settings from "@/settings/settings.json"
 import {SoundcloudPlayer} from "@/players/SoundcloudPlayer";
+import {YoutubeMusicPlayer} from "@/players/YoutubePlayer";
 
 import {currentGameState, SelectedMusic} from "@/main"
 import {Player} from "@/players/PlayerBase";
@@ -68,11 +69,10 @@ let sepSelectInterval = setInterval(() => {
 }, 30);
 
 onMounted(()=>{
-  player = new SoundcloudPlayer(SelectedMusic.url);
-
-  //if(SelectedMusic.url.indexOf("soundcloud.com") !== -1)
-  //else if (SelectedMusic.url.indexOf("youtube.com") !== -1)
-  //  player = new YoutubePlayer(SelectedMusic.url);
+  if(SelectedMusic.url.indexOf("soundcloud.com") !== -1)
+    player = new SoundcloudPlayer(SelectedMusic.url);
+  else if (SelectedMusic.url.indexOf("youtube.com") !== -1)
+    player = new YoutubeMusicPlayer(SelectedMusic.url);
 
   isFinished.value = currentGameState.value.isFinished;
 

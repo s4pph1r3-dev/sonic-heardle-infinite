@@ -10,10 +10,12 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@types/youtube-player": "^5.5.11",
     "fuzzy-search": "^3.2.1",
     "mount-vue-component": "^0.10.2",
     "soundcloud": "^3.3.2",
-    "vue": "^3.5.13"
+    "vue": "^3.5.13",
+    "youtube-player": "^5.6.0"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^5.2.4",
