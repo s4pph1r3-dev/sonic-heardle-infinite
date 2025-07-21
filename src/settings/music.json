@@ -53,7 +53,7 @@
     }
   },
   {
-    "title": "Spring Yars Zone",
+    "title": "Spring Yard Zone",
     "media": "Sonic the Hedgehog (16-Bit)",
     "url": "https://soundcloud.com/nathan-202274230/spring-yard-zone-2",
     "tags": {
@@ -458,4 +458,500 @@
       "green-hills": true
     }
   },
+
+  { 
+    "title": "Title",
+    "media": "Sonic the Hedgehog 2 (8-Bit)",
+    "url": "https://soundcloud.com/sonic_complete/title-screen-3?in=sonic_complete/sets/sonic-the-hedgehog-2-game-gear-1992&si=4f933d24bfcf41cf89050fe1aa309f63&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing",
+    "tags": {
+      "year": 1992,
+      "console": "Sega Master System",
+      "series": "Sonic the Hedgehog",
+      "game": "Sonic the Hedgehog 2 (8-Bit)",
+      "game-genre": "2D Platformer",
+      "green-hills": false
+    }
+  },
+  { 
+    "title": "Under Ground Zone",
+    "media": "Sonic the Hedgehog 2 (8-Bit)",
+    "url": "https://soundcloud.com/sonic_complete/under-ground-zone?in=sonic_complete/sets/sonic-the-hedgehog-2-game-gear-1992&si=414d5a7ca4094812aaefead2d6f58550&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing",
+    "tags": {
+      "year": 1992,
+      "console": "Sega Master System",
+      "series": "Sonic the Hedgehog",
+      "game": "Sonic the Hedgehog 2 (8-Bit)",
+      "game-genre": "2D Platformer",
+      "green-hills": false
+    }
+  },
+  { 
+    "title": "Sky High Zone",
+    "media": "Sonic the Hedgehog 2 (8-Bit)",
+    "url": "https://soundcloud.com/sonic_complete/sky-high-zone?in=sonic_complete/sets/sonic-the-hedgehog-2-game-gear-1992&si=e1afd04e2c5d4318914d7c0edcc5ba85&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing",
+    "tags": {
+      "year": 1992,
+      "console": "Sega Master System",
+      "series": "Sonic the Hedgehog",
+      "game": "Sonic the Hedgehog 2 (8-Bit)",
+      "game-genre": "2D Platformer",
+      "green-hills": false
+    }
+  },
+  { 
+    "title": "",
+    "media": "Sonic the Hedgehog 2 (8-Bit)",
+    "url": "",
+    "tags": {
+      "year": 1992,
+      "console": "Sega Master System",
+      "series": "Sonic the Hedgehog",
+      "game": "Sonic the Hedgehog 2 (8-Bit)",
+      "game-genre": "2D Platformer",
+      "green-hills": false
+    }
+  },
+  { 
+    "title": "Aqua Lake Zone",
+    "media": "Sonic the Hedgehog 2 (8-Bit)",
+    "url": "https://soundcloud.com/sonic_complete/aqua-lake-zone?in=sonic_complete/sets/sonic-the-hedgehog-2-game-gear-1992&si=4dbe9229ef3b45ee879a22a863e7b62a&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing",
+    "tags": {
+      "year": 1992,
+      "console": "Sega Master System",
+      "series": "Sonic the Hedgehog",
+      "game": "Sonic the Hedgehog 2 (8-Bit)",
+      "game-genre": "2D Platformer",
+      "green-hills": false
+    }
+  },
+  { 
+    "title": "Green Hills Zone",
+    "media": "Sonic the Hedgehog 2 (8-Bit)",
+    "url": "https://soundcloud.com/sonic_complete/green-hills-zone?in=sonic_complete/sets/sonic-the-hedgehog-2-game-gear-1992&si=5f39a13951ec44819abd8c063182e7d0&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing",
+    "tags": {
+      "year": 1992,
+      "console": "Sega Master System",
+      "series": "Sonic the Hedgehog",
+      "game": "Sonic the Hedgehog 2 (8-Bit)",
+      "game-genre": "2D Platformer",
+      "green-hills": false
+    }
+  },
+  { 
+    "title": "Gimmick Moutains Zone",
+    "media": "Sonic the Hedgehog 2 (8-Bit)",
+    "url": "https://soundcloud.com/sonic_complete/gimmick-mountain-zone?in=sonic_complete/sets/sonic-the-hedgehog-2-game-gear-1992&si=b53f1e21c1d74cab9c4f2d70f9ef66b2&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing",
+    "tags": {
+      "year": 1992,
+      "console": "Sega Master System",
+      "series": "Sonic the Hedgehog",
+      "game": "Sonic the Hedgehog 2 (8-Bit)",
+      "game-genre": "2D Platformer",
+      "green-hills": false
+    }
+  },
+  { 
+    "title": "Scrambled Egg Zone",
+    "media": "Sonic the Hedgehog 2 (8-Bit)",
+    "url": "https://soundcloud.com/sonic_complete/scrambled-egg-zone?in=sonic_complete/sets/sonic-the-hedgehog-2-game-gear-1992&si=4f63b4baac1349bea07d4fcffc04e6de&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing",
+    "tags": {
+      "year": 1992,
+      "console": "Sega Master System",
+      "series": "Sonic the Hedgehog",
+      "game": "Sonic the Hedgehog 2 (8-Bit)",
+      "game-genre": "2D Platformer",
+      "green-hills": false
+    }
+  },
+  { 
+    "title": "Crystal Egg Zone",
+    "media": "Sonic the Hedgehog 2 (8-Bit)",
+    "url": "https://soundcloud.com/sonic_complete/crystal-egg-zone?in=sonic_complete/sets/sonic-the-hedgehog-2-game-gear-1992&si=1e8dee06b55e4b35be5a481a93c56ff4&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing",
+    "tags": {
+      "year": 1992,
+      "console": "Sega Master System",
+      "series": "Sonic the Hedgehog",
+      "game": "Sonic the Hedgehog 2 (8-Bit)",
+      "game-genre": "2D Platformer",
+      "green-hills": false
+    }
+  },
+  { 
+    "title": "Boss (Game Gear Version)",
+    "media": "Sonic the Hedgehog 2 (8-Bit)",
+    "url": "https://soundcloud.com/sonic_complete/boss-gg?in=sonic_complete/sets/sonic-the-hedgehog-2-game-gear-1992&si=ebe33831278b4302b6d815daf9905165&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing",
+    "tags": {
+      "year": 1992,
+      "console": "Sega Game Gear",
+      "series": "Sonic the Hedgehog",
+      "game": "Sonic the Hedgehog 2 (8-Bit)",
+      "game-genre": "2D Platformer",
+      "green-hills": false
+    }
+  },
+  { 
+    "title": "Boss (Master System Version)",
+    "media": "Sonic the Hedgehog 2 (8-Bit)",
+    "url": "https://soundcloud.com/sonic_complete/boss-ms?in=sonic_complete/sets/sonic-the-hedgehog-2-game-gear-1992&si=a4e24f0d41a54c6cb614d6ddafb847da&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing",
+    "tags": {
+      "year": 1992,
+      "console": "Sega Master System",
+      "series": "Sonic the Hedgehog",
+      "game": "Sonic the Hedgehog 2 (8-Bit)",
+      "game-genre": "2D Platformer",
+      "green-hills": false
+    }
+  },
+  { 
+    "title": "Invincibility",
+    "media": "Sonic the Hedgehog 2 (8-Bit)",
+    "url": "https://soundcloud.com/sonic_complete/invincibility-3?in=sonic_complete/sets/sonic-the-hedgehog-2-game-gear-1992&si=6e3b6963e4e14c649cd39b84cceb8c3d&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing",
+    "tags": {
+      "year": 1992,
+      "console": "Sega Master System",
+      "series": "Sonic the Hedgehog",
+      "game": "Sonic the Hedgehog 2 (8-Bit)",
+      "game-genre": "2D Platformer",
+      "green-hills": false
+    }
+  },
+  { 
+    "title": "Continue",
+    "media": "Sonic the Hedgehog 2 (8-Bit)",
+    "url": "https://soundcloud.com/sonic_complete/continue-2?in=sonic_complete/sets/sonic-the-hedgehog-2-game-gear-1992&si=4a0900d660694408b9525c5e10aab408&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing",
+    "tags": {
+      "year": 1992,
+      "console": "Sega Master System",
+      "series": "Sonic the Hedgehog",
+      "game": "Sonic the Hedgehog 2 (8-Bit)",
+      "game-genre": "2D Platformer",
+      "green-hills": false
+    }
+  },
+  { 
+    "title": "Ending",
+    "media": "Sonic the Hedgehog 2 (8-Bit)",
+    "url": "https://soundcloud.com/sonic_complete/ending-3?in=sonic_complete/sets/sonic-the-hedgehog-2-game-gear-1992&si=8fbbd2accefd45fcbdbc3392dbf33f2d&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing",
+    "tags": {
+      "year": 1992,
+      "console": "Sega Master System",
+      "series": "Sonic the Hedgehog",
+      "game": "Sonic the Hedgehog 2 (8-Bit)",
+      "game-genre": "2D Platformer",
+      "green-hills": false
+    }
+  },
+
+  {
+    "title": "Title Screen",
+    "media": "Sonic the Hedgehog 2 (16-Bit)",
+    "url": "https://www.youtube.com/watch?v=4chuzNMrIds&list=PLvNp0Boas721Im_ZBhvDEuCqzLsRvlKb3&index=1",
+    "tags": {
+      "year": 1992,
+      "console": "Sega Genesis",
+      "series": "Sonic the Hedgehog",
+      "game": "Sonic the Hedgehog 2 (16-Bit)",
+      "game-genre": "2D Platformer",
+      "green-hills": false
+    }
+  },
+  {
+    "title": "Emerald Hill Zone",
+    "media": "Sonic the Hedgehog 2 (16-Bit)",
+    "url": "https://www.youtube.com/watch?v=LWdhufzxQRA&list=PLvNp0Boas721Im_ZBhvDEuCqzLsRvlKb3&index=2",
+    "tags": {
+      "year": 1992,
+      "console": "Sega Genesis",
+      "series": "Sonic the Hedgehog",
+      "game": "Sonic the Hedgehog 2 (16-Bit)",
+      "game-genre": "2D Platformer",
+      "green-hills": false
+    }
+  },
+  {
+    "title": "Chemical Plant Zone",
+    "media": "Sonic the Hedgehog 2 (16-Bit)",
+    "url": "https://www.youtube.com/watch?v=SrCgjGnlQRQ&list=PLvNp0Boas721Im_ZBhvDEuCqzLsRvlKb3&index=3",
+    "tags": {
+      "year": 1992,
+      "console": "Sega Genesis",
+      "series": "Sonic the Hedgehog",
+      "game": "Sonic the Hedgehog 2 (16-Bit)",
+      "game-genre": "2D Platformer",
+      "green-hills": false
+    }
+  },
+  {
+    "title": "Aquatic Ruin Zone",
+    "media": "Sonic the Hedgehog 2 (16-Bit)",
+    "url": "https://www.youtube.com/watch?v=AK33c2rV2Do&list=PLvNp0Boas721Im_ZBhvDEuCqzLsRvlKb3&index=4",
+    "tags": {
+      "year": 1992,
+      "console": "Sega Genesis",
+      "series": "Sonic the Hedgehog",
+      "game": "Sonic the Hedgehog 2 (16-Bit)",
+      "game-genre": "2D Platformer",
+      "green-hills": false
+    }
+  },
+  {
+    "title": "Casino Night Zone",
+    "media": "Sonic the Hedgehog 2 (16-Bit)",
+    "url": "https://www.youtube.com/watch?v=0gw7A3Ao7Y8&list=PLvNp0Boas721Im_ZBhvDEuCqzLsRvlKb3&index=5",
+    "tags": {
+      "year": 1992,
+      "console": "Sega Genesis",
+      "series": "Sonic the Hedgehog",
+      "game": "Sonic the Hedgehog 2 (16-Bit)",
+      "game-genre": "2D Platformer",
+      "green-hills": false
+    }
+  },
+  {
+    "title": "Hill Top Zone",
+    "media": "Sonic the Hedgehog 2 (16-Bit)",
+    "url": "https://www.youtube.com/watch?v=_Eg7ZWnYKHE&list=PLvNp0Boas721Im_ZBhvDEuCqzLsRvlKb3&index=6",
+    "tags": {
+      "year": 1992,
+      "console": "Sega Genesis",
+      "series": "Sonic the Hedgehog",
+      "game": "Sonic the Hedgehog 2 (16-Bit)",
+      "game-genre": "2D Platformer",
+      "green-hills": false
+    }
+  },
+  {
+    "title": "Mystic Cave Zone",
+    "media": "Sonic the Hedgehog 2 (16-Bit)",
+    "url": "https://www.youtube.com/watch?v=HdgRJDu4hcU&list=PLvNp0Boas721Im_ZBhvDEuCqzLsRvlKb3&index=7",
+    "tags": {
+      "year": 1992,
+      "console": "Sega Genesis",
+      "series": "Sonic the Hedgehog",
+      "game": "Sonic the Hedgehog 2 (16-Bit)",
+      "game-genre": "2D Platformer",
+      "green-hills": false
+    }
+  },
+  {
+    "title": "Oil Ocean Zone",
+    "media": "Sonic the Hedgehog 2 (16-Bit)",
+    "url": "https://www.youtube.com/watch?v=nhCB-xYzI_U&list=PLvNp0Boas721Im_ZBhvDEuCqzLsRvlKb3&index=8",
+    "tags": {
+      "year": 1992,
+      "console": "Sega Genesis",
+      "series": "Sonic the Hedgehog",
+      "game": "Sonic the Hedgehog 2 (16-Bit)",
+      "game-genre": "2D Platformer",
+      "green-hills": false
+    }
+  },
+  {
+    "title": "Metropolis Zone",
+    "media": "Sonic the Hedgehog 2 (16-Bit)",
+    "url": "https://www.youtube.com/watch?v=-PHQ7IzAh2s&list=PLvNp0Boas721Im_ZBhvDEuCqzLsRvlKb3&index=9",
+    "tags": {
+      "year": 1992,
+      "console": "Sega Genesis",
+      "series": "Sonic the Hedgehog",
+      "game": "Sonic the Hedgehog 2 (16-Bit)",
+      "game-genre": "2D Platformer",
+      "green-hills": false
+    }
+  },
+  {
+    "title": "Sky Chase Zone",
+    "media": "Sonic the Hedgehog 2 (16-Bit)",
+    "url": "https://www.youtube.com/watch?v=RlMWQxSkAkw&list=PLvNp0Boas721Im_ZBhvDEuCqzLsRvlKb3&index=10",
+    "tags": {
+      "year": 1992,
+      "console": "Sega Genesis",
+      "series": "Sonic the Hedgehog",
+      "game": "Sonic the Hedgehog 2 (16-Bit)",
+      "game-genre": "2D Platformer",
+      "green-hills": false
+    }
+  },
+  {
+    "title": "Wing Fortress Zone",
+    "media": "Sonic the Hedgehog 2 (16-Bit)",
+    "url": "https://www.youtube.com/watch?v=SBw_mtXrA4g&list=PLvNp0Boas721Im_ZBhvDEuCqzLsRvlKb3&index=11",
+    "tags": {
+      "year": 1992,
+      "console": "Sega Genesis",
+      "series": "Sonic the Hedgehog",
+      "game": "Sonic the Hedgehog 2 (16-Bit)",
+      "game-genre": "2D Platformer",
+      "green-hills": false
+    }
+  },
+  {
+    "title": "Death Egg Zone",
+    "media": "Sonic the Hedgehog 2 (16-Bit)",
+    "url": "https://www.youtube.com/watch?v=VtyMbS_KtIk&list=PLvNp0Boas721Im_ZBhvDEuCqzLsRvlKb3&index=12",
+    "tags": {
+      "year": 1992,
+      "console": "Sega Genesis",
+      "series": "Sonic the Hedgehog",
+      "game": "Sonic the Hedgehog 2 (16-Bit)",
+      "game-genre": "2D Platformer",
+      "green-hills": false
+    }
+  },
+  {
+    "title": "Boss",
+    "media": "Sonic the Hedgehog 2 (16-Bit)",
+    "url": "https://www.youtube.com/watch?v=S3JZKyaucK4&list=PLvNp0Boas721Im_ZBhvDEuCqzLsRvlKb3&index=13",
+    "tags": {
+      "year": 1992,
+      "console": "Sega Genesis",
+      "series": "Sonic the Hedgehog",
+      "game": "Sonic the Hedgehog 2 (16-Bit)",
+      "game-genre": "2D Platformer",
+      "green-hills": false
+    }
+  },
+  {
+    "title": "Death Egg Robot",
+    "media": "Sonic the Hedgehog 2 (16-Bit)",
+    "url": "https://www.youtube.com/watch?v=GOTSkDwHsic&list=PLvNp0Boas721Im_ZBhvDEuCqzLsRvlKb3&index=14",
+    "tags": {
+      "year": 1992,
+      "console": "Sega Genesis",
+      "series": "Sonic the Hedgehog",
+      "game": "Sonic the Hedgehog 2 (16-Bit)",
+      "game-genre": "2D Platformer",
+      "green-hills": false
+    }
+  },
+  {
+    "title": "Special Stage",
+    "media": "Sonic the Hedgehog 2 (16-Bit)",
+    "url": "https://www.youtube.com/watch?v=RCTtkA8Z1L8&list=PLvNp0Boas721Im_ZBhvDEuCqzLsRvlKb3&index=15",
+    "tags": {
+      "year": 1992,
+      "console": "Sega Genesis",
+      "series": "Sonic the Hedgehog",
+      "game": "Sonic the Hedgehog 2 (16-Bit)",
+      "game-genre": "2D Platformer",
+      "green-hills": false
+    }
+  },
+  {
+    "title": "Super Sonic",
+    "media": "Sonic the Hedgehog 2 (16-Bit)",
+    "url": "https://www.youtube.com/watch?v=jSvTnRE_MJU&list=PLvNp0Boas721Im_ZBhvDEuCqzLsRvlKb3&index=16",
+    "tags": {
+      "year": 1992,
+      "console": "Sega Genesis",
+      "series": "Sonic the Hedgehog",
+      "game": "Sonic the Hedgehog 2 (16-Bit)",
+      "game-genre": "2D Platformer",
+      "green-hills": false
+    }
+  },
+  {
+    "title": "Invincibility",
+    "media": "Sonic the Hedgehog 2 (16-Bit)",
+    "url": "https://www.youtube.com/watch?v=UbobbsFpMR0&list=PLvNp0Boas721Im_ZBhvDEuCqzLsRvlKb3&index=17",
+    "tags": {
+      "year": 1992,
+      "console": "Sega Genesis",
+      "series": "Sonic the Hedgehog",
+      "game": "Sonic the Hedgehog 2 (16-Bit)",
+      "game-genre": "2D Platformer",
+      "green-hills": false
+    }
+  },
+  {
+    "title": "Options",
+    "media": "Sonic the Hedgehog 2 (16-Bit)",
+    "url": "https://www.youtube.com/watch?v=1dhT3wpjIy4&list=PLvNp0Boas721Im_ZBhvDEuCqzLsRvlKb3&index=18",
+    "tags": {
+      "year": 1992,
+      "console": "Sega Genesis",
+      "series": "Sonic the Hedgehog",
+      "game": "Sonic the Hedgehog 2 (16-Bit)",
+      "game-genre": "2D Platformer",
+      "green-hills": false
+    }
+  },
+  {
+    "title": "Emerald Hill Zone (2P)",
+    "media": "Sonic the Hedgehog 2 (16-Bit)",
+    "url": "https://www.youtube.com/watch?v=thbCamUHhVU&list=PLvNp0Boas721Im_ZBhvDEuCqzLsRvlKb3&index=19",
+    "tags": {
+      "year": 1992,
+      "console": "Sega Genesis",
+      "series": "Sonic the Hedgehog",
+      "game": "Sonic the Hedgehog 2 (16-Bit)",
+      "game-genre": "2D Platformer",
+      "green-hills": false
+    }
+  },
+  {
+    "title": "Mystic Cave Zone (2P)",
+    "media": "Sonic the Hedgehog 2 (16-Bit)",
+    "url": "https://www.youtube.com/watch?v=cxPZqsc_uzA&list=PLvNp0Boas721Im_ZBhvDEuCqzLsRvlKb3&index=20",
+    "tags": {
+      "year": 1992,
+      "console": "Sega Genesis",
+      "series": "Sonic the Hedgehog",
+      "game": "Sonic the Hedgehog 2 (16-Bit)",
+      "game-genre": "2D Platformer",
+      "green-hills": false
+    }
+  },
+  {
+    "title": "Casino Night Zone (2P)",
+    "media": "Sonic the Hedgehog 2 (16-Bit)",
+    "url": "https://www.youtube.com/watch?v=7NyVZF0HW_U&list=PLvNp0Boas721Im_ZBhvDEuCqzLsRvlKb3&index=21",
+    "tags": {
+      "year": 1992,
+      "console": "Sega Genesis",
+      "series": "Sonic the Hedgehog",
+      "game": "Sonic the Hedgehog 2 (16-Bit)",
+      "game-genre": "2D Platformer",
+      "green-hills": false
+    }
+  },
+  {
+    "title": "Results",
+    "media": "Sonic the Hedgehog 2 (16-Bit)",
+    "url": "https://www.youtube.com/watch?v=I7Lq2KiEI2E&list=PLvNp0Boas721Im_ZBhvDEuCqzLsRvlKb3&index=22",
+    "tags": {
+      "year": 1992,
+      "console": "Sega Genesis",
+      "series": "Sonic the Hedgehog",
+      "game": "Sonic the Hedgehog 2 (16-Bit)",
+      "game-genre": "2D Platformer",
+      "green-hills": false
+    }
+  },
+  {
+    "title": "Credtis",
+    "media": "Sonic the Hedgehog 2 (16-Bit)",
+    "url": "https://www.youtube.com/watch?v=cgHxwVFFCik&list=PLvNp0Boas721Im_ZBhvDEuCqzLsRvlKb3&index=23",
+    "tags": {
+      "year": 1992,
+      "console": "Sega Genesis",
+      "series": "Sonic the Hedgehog",
+      "game": "Sonic the Hedgehog 2 (16-Bit)",
+      "game-genre": "2D Platformer",
+      "green-hills": false
+    }
+  },
+  {
+    "title": "Hidden Palace Zone (Unused)",
+    "media": "Sonic the Hedgehog 2 (16-Bit)",
+    "url": "https://www.youtube.com/watch?v=BJy1290Mpmk&list=PLvNp0Boas721Im_ZBhvDEuCqzLsRvlKb3&index=24",
+    "tags": {
+      "year": 1992,
+      "console": "Sega Genesis",
+      "series": "Sonic the Hedgehog",
+      "game": "Sonic the Hedgehog 2 (16-Bit)",
+      "game-genre": "2D Platformer",
+      "green-hills": false
+    }
+  }
 ]
